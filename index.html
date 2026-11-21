@@ -6,12 +6,12 @@
   <title>History Genie — AQA GCSE History (8145) Revision & Exam Practice</title>
 
   <!-- Razor-sharp inline SVG favicon matching the custom History Genie 'H' + Mortarboard emblem -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='M33 34 L53 34 L53 56 L69 56 L69 34 L89 34 L89 96 L69 96 L69 72 L53 72 L53 96 L33 96 Z' fill='%23004EB3' stroke='%2300214E' stroke-width='7' stroke-linejoin='round'/%3E%3Cg transform='translate(38, 28) rotate(-18)'%3E%3Cpolygon points='0,-16 32,-5 0,6 -32,-5' fill='%2300214E'/%3E%3Cpath d='M-18,0 L-18,12 C-8,17 8,17 18,12 L18,0 Z' fill='%2300214E'/%3E%3Cpath d='M-18,4 C-8,9 8,9 18,4' fill='none' stroke='%23FFC300' stroke-width='3.5' stroke-linecap='round'/%3E%3C/g%3E%3Cpath d='M16 33 C11 41 14 52 18 61' fill='none' stroke='%23FFC300' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='18.5' cy='62' r='2.8' fill='%23FFC300'/%3E%3Cpath d='M16 64 L15 72 M18.5 64 L18.5 73 M21 64 L22 72' stroke='%23FFC300' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='M33 34 L53 34 L53 56 L69 56 L69 34 L89 34 L89 96 L69 96 L69 72 L53 72 L53 96 L33 96 Z' fill='%230047AB' stroke='%23042454' stroke-width='7' stroke-linejoin='round'/%3E%3Cg transform='translate(38, 28) rotate(-18)'%3E%3Cpolygon points='0,-16 32,-5 0,6 -32,-5' fill='%23042454'/%3E%3Cpath d='M-18,0 L-18,12 C-8,17 8,17 18,12 L18,0 Z' fill='%23042454'/%3E%3Cpath d='M-18,4 C-8,9 8,9 18,4' fill='none' stroke='%23F5B800' stroke-width='3.5' stroke-linecap='round'/%3E%3C/g%3E%3Cpath d='M16 33 C11 41 14 52 18 61' fill='none' stroke='%23F5B800' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='18.5' cy='62' r='2.8' fill='%23F5B800'/%3E%3Cpath d='M16 64 L15 72 M18.5 64 L18.5 73 M21 64 L22 72' stroke='%23F5B800' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
 
-  <!-- Google Fonts: Nunito (for the rounded outlined History Genie wordmark) & Inter (clean UI) -->
+  <!-- Google Fonts: Inter (clean academic UI) & Nunito (outlined History Genie wordmark) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@800;900&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,12 +25,12 @@
           },
           colors: {
             brand: {
-              blue: '#004EB3',
-              blueHover: '#003B8E',
+              blue: '#0047AB',
+              blueHover: '#003580',
               blueSoft: '#EFF6FF',
               blueBorder: '#BFDBFE',
-              navy: '#00214E',
-              gold: '#FFC300',
+              navy: '#042454',
+              gold: '#F5B800',
               goldSoft: '#FFFBEB',
               goldText: '#92400E',
             }
@@ -41,22 +41,24 @@
   </script>
 
   <style>
-    /* Custom History Genie Wordmark styling matching H.png */
+    /* Custom History Genie Wordmark styling matching the H + Mortarboard logo */
     .hg-wordmark {
       font-family: 'Nunito', sans-serif;
       font-weight: 900;
-      color: #004EB3;
-      -webkit-text-stroke: 1.45px #00214E;
+      color: #0047AB;
+      -webkit-text-stroke: 1.45px #042454;
       paint-order: stroke fill;
-      text-shadow: 0 1.5px 0 #00214E;
+      text-shadow: 0 1.5px 0 #042454;
       letter-spacing: -0.015em;
     }
 
     /* Smooth focus rings using Royal Blue */
+    a:focus-visible,
     button:focus-visible,
     select:focus-visible,
+    input:focus-visible,
     textarea:focus-visible {
-      outline: 2px solid #004EB3;
+      outline: 2px solid #0047AB;
       outline-offset: 2px;
     }
 
@@ -105,120 +107,181 @@
     }
   </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-[#EFF6FF] selection:text-[#004EB3]">
+<body class="bg-[#F8FAFC] text-[#0F172A] antialiased min-h-screen flex flex-col selection:bg-[#EFF6FF] selection:text-[#0047AB]">
 
-  <!-- Top 3px Brand Gradient Accent Bar (#00214E -> #004EB3 -> #FFC300) -->
-  <div class="h-[3px] w-full bg-gradient-to-r from-[#00214E] via-[#004EB3] to-[#FFC300]"></div>
+  <!-- Top 3px Brand Gradient Accent Bar (#042454 -> #0047AB -> #F5B800) -->
+  <div class="h-[3px] w-full bg-gradient-to-r from-[#042454] via-[#0047AB] to-[#F5B800]"></div>
 
-  <!-- Sticky Minimalist Header -->
-  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200">
+  <!-- Sticky Minimalist Header with Multi-Page Navigation & Student Account Switcher -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-[#E2E8F0]">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       <div class="flex flex-wrap items-center justify-between gap-3 py-3">
 
-        <!-- Top-Left Brand Lockup: 44x44 Inline SVG Emblem + Outlined 'History Genie' Wordmark + AQA Badge -->
-        <div class="flex items-center gap-2.5">
-          <svg width="44" height="44" viewBox="0 0 120 120" class="shrink-0 select-none" aria-label="History Genie Logo">
+        <!-- Top-Left Brand Lockup: Inline SVG Emblem + Outlined 'History Genie' Wordmark + AQA Badge -->
+        <a href="#home" class="flex items-center gap-2.5 group">
+          <svg width="44" height="44" viewBox="0 0 120 120" class="shrink-0 select-none transition-transform group-hover:scale-105" aria-label="History Genie Logo">
             <!-- Blocky Royal Blue 'H' with thick Deep Navy outline -->
             <path d="M34 35 L54 35 L54 56 L70 56 L70 35 L90 35 L90 97 L70 97 L70 73 L54 73 L54 97 L34 97 Z"
-                  fill="#004EB3" stroke="#00214E" stroke-width="6.5" stroke-linejoin="round" />
+                  fill="#0047AB" stroke="#042454" stroke-width="6.5" stroke-linejoin="round" />
             <!-- Tilted Deep Navy Mortarboard on Upper-Left Corner -->
             <g transform="translate(39, 28) rotate(-18)">
-              <!-- Mortarboard Diamond Top -->
-              <polygon points="0,-16 33,-5 0,6 -33,-5" fill="#00214E" />
-              <!-- Skullcap Base -->
-              <path d="M-18,0 L-18,12 C-8,17 8,17 18,12 L18,0 Z" fill="#00214E" />
-              <!-- Golden-Yellow Band -->
-              <path d="M-18,4 C-8,9 8,9 18,4" fill="none" stroke="#FFC300" stroke-width="3.5" stroke-linecap="round" />
+              <polygon points="0,-16 33,-5 0,6 -33,-5" fill="#042454" />
+              <path d="M-18,0 L-18,12 C-8,17 8,17 18,12 L18,0 Z" fill="#042454" />
+              <path d="M-18,4 C-8,9 8,9 18,4" fill="none" stroke="#F5B800" stroke-width="3.5" stroke-linecap="round" />
             </g>
-            <!-- Curved Hanging Golden-Yellow Tassel -->
-            <path d="M16 33 C11 41 14 52 18 61" fill="none" stroke="#FFC300" stroke-width="4" stroke-linecap="round" />
-            <circle cx="18.5" cy="62" r="2.8" fill="#FFC300" />
-            <path d="M16 64 L14.8 72.5 M18.5 64 L18.5 73.5 M21 64 L22.2 72.5" stroke="#FFC300" stroke-width="2.4" stroke-linecap="round" />
+            <!-- Curved Hanging Mortarboard Gold Tassel -->
+            <path d="M16 33 C11 41 14 52 18 61" fill="none" stroke="#F5B800" stroke-width="4" stroke-linecap="round" />
+            <circle cx="18.5" cy="62" r="2.8" fill="#F5B800" />
+            <path d="M16 64 L14.8 72.5 M18.5 64 L18.5 73.5 M21 64 L22.2 72.5" stroke="#F5B800" stroke-width="2.4" stroke-linecap="round" />
           </svg>
 
           <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2.5">
             <span class="hg-wordmark text-2xl sm:text-[26px] leading-none">History Genie</span>
-            <span class="inline-flex items-center self-start sm:self-auto px-2 py-0.5 rounded-md text-[11px] font-bold tracking-wide uppercase bg-[#00214E] text-[#FFC300]">
+            <span class="inline-flex items-center self-start sm:self-auto px-2 py-0.5 rounded-md text-[11px] font-bold tracking-wide uppercase bg-[#042454] text-[#F5B800]">
               AQA GCSE 8145
             </span>
           </div>
-        </div>
+        </a>
 
-        <!-- Right Header Controls: Overall Mastery Meter + Backup / Restore -->
+        <!-- Right Header Controls: Course Mastery Meter + Account Button -->
         <div class="flex items-center gap-3">
-          <div class="hidden sm:flex flex-col items-end">
-            <div class="flex items-center gap-1.5 text-xs font-medium text-slate-600">
+          <div class="hidden md:flex flex-col items-end">
+            <div class="flex items-center gap-1.5 text-xs font-medium text-[#475569]">
               <span>Course Mastery</span>
-              <span id="header-mastery-pct" class="font-bold text-[#004EB3]">0%</span>
+              <span id="header-mastery-pct" class="font-bold text-[#0047AB]">0%</span>
             </div>
-            <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden border border-slate-200 mt-1">
-              <div id="header-mastery-bar" class="h-full bg-[#004EB3] transition-all duration-300" style="width: 0%"></div>
+            <div class="w-28 h-2 bg-slate-100 rounded-full overflow-hidden border border-[#E2E8F0] mt-1">
+              <div id="header-mastery-bar" class="h-full bg-[#0047AB] transition-all duration-300" style="width: 0%"></div>
             </div>
           </div>
 
-          <button type="button" onclick="openBackupModal()"
-            class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-[#00214E] bg-white hover:bg-[#EFF6FF] border border-slate-200 hover:border-[#BFDBFE] transition">
-            <svg class="w-3.5 h-3.5 text-[#004EB3]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-            </svg>
-            Backup / Restore
+          <button type="button" id="header-account-btn" onclick="openAccountModal('profiles')"
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold text-[#042454] bg-white hover:bg-[#EFF6FF] border border-[#E2E8F0] hover:border-[#BFDBFE] transition shadow-2xs">
+            <span id="header-avatar-badge" class="w-6 h-6 rounded-full bg-slate-200 text-[#042454] font-bold text-[11px] flex items-center justify-center shrink-0">G</span>
+            <span id="header-account-label" class="max-w-[135px] truncate">Guest — Sign In</span>
           </button>
         </div>
       </div>
 
-      <!-- 4-Tab Navigation Bar (No Search Bars Anywhere) -->
-      <nav class="flex items-center gap-1 overflow-x-auto pb-0 -mb-px" aria-label="Main Navigation">
-        <button type="button" id="tab-btn-topics" onclick="switchTab('topics')"
-          class="tab-btn px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
-          1. Topics <span class="ml-1 text-xs opacity-80">(16)</span>
-        </button>
-        <button type="button" id="tab-btn-exam" onclick="switchTab('exam')"
-          class="tab-btn px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
-          2. Exam Practice <span class="ml-1 text-xs opacity-80">(52)</span>
-        </button>
-        <button type="button" id="tab-btn-flashcards" onclick="switchTab('flashcards')"
-          class="tab-btn px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
-          3. Flashcards <span class="ml-1 text-xs opacity-80">(116)</span>
-        </button>
-        <button type="button" id="tab-btn-guide" onclick="switchTab('guide')"
-          class="tab-btn px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
-          4. Exam Guide
-        </button>
+      <!-- 5-Page Hash Navigation Bar (Zero Search Bars Anywhere) -->
+      <nav class="flex items-center gap-1 overflow-x-auto pb-0 -mb-px" aria-label="Main Page Navigation">
+        <a href="#home" id="nav-link-home"
+          class="nav-link px-3.5 sm:px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
+          Home
+        </a>
+        <a href="#topics" id="nav-link-topics"
+          class="nav-link px-3.5 sm:px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
+          Topics <span class="ml-1 text-xs opacity-75">(16)</span>
+        </a>
+        <a href="#exam-practice" id="nav-link-exam-practice"
+          class="nav-link px-3.5 sm:px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
+          Exam Practice <span class="ml-1 text-xs opacity-75">(52)</span>
+        </a>
+        <a href="#flashcards" id="nav-link-flashcards"
+          class="nav-link px-3.5 sm:px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
+          Flashcards <span class="ml-1 text-xs opacity-75">(116)</span>
+        </a>
+        <a href="#exam-guide" id="nav-link-exam-guide"
+          class="nav-link px-3.5 sm:px-4 py-2.5 text-sm font-semibold border-b-2 transition whitespace-nowrap">
+          Exam Guide
+        </a>
       </nav>
     </div>
   </header>
 
-  <!-- Toast Notification Banner (Replaces all browser alert/confirm dialogs) -->
-  <div id="toast-banner" class="fixed bottom-4 right-4 z-50 hidden max-w-sm bg-[#00214E] text-white px-4 py-3 rounded-xl shadow-lg border border-[#004EB3] text-sm font-medium flex items-center gap-2.5">
-    <span class="w-2 h-2 rounded-full bg-[#FFC300] shrink-0"></span>
+  <!-- Toast Notification Banner (Replaces all browser alert/confirm/prompt dialogs) -->
+  <div id="toast-banner" class="fixed bottom-4 right-4 z-50 hidden max-w-sm bg-[#042454] text-white px-4 py-3 rounded-xl shadow-lg border border-[#0047AB] text-sm font-medium flex items-center gap-2.5">
+    <span class="w-2 h-2 rounded-full bg-[#F5B800] shrink-0"></span>
     <span id="toast-message">Saved</span>
   </div>
 
   <!-- Main Content Container -->
   <main class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6">
 
-    <!-- ==================== TAB 1: TOPICS (16 SUB-TOPICS) ==================== -->
-    <section id="view-topics" class="space-y-6">
+    <!-- ==================== PAGE 1: HOME / SUMMARY (#home) ==================== -->
+    <section id="page-home" class="space-y-6">
+      <!-- Personalised Welcome Banner -->
+      <div id="home-welcome-card" class="bg-white border border-[#E2E8F0] rounded-2xl p-5 sm:p-6 shadow-2xs"></div>
+
+      <!-- 4 Overview KPI Summary Cards -->
+      <div id="home-kpi-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+      <!-- Unit-by-Unit Mastery Breakdown (All 4 AQA 8145 Units) -->
+      <div class="space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-base sm:text-lg font-bold text-[#042454]">Unit-by-Unit Mastery Breakdown</h2>
+            <p class="text-xs sm:text-sm text-[#475569]">Track your syllabus coverage, exam scores, and flashcard recall across all four AQA 8145 units.</p>
+          </div>
+          <a href="#topics" class="text-xs font-semibold text-[#0047AB] hover:underline">View All 16 Sub-Topics →</a>
+        </div>
+        <div id="home-units-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+      </div>
+
+      <!-- Quick Action Panel + Recent Marked Attempts Table -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        <!-- Quick Action Panel -->
+        <div class="lg:col-span-4 bg-white border border-[#E2E8F0] rounded-2xl p-5 flex flex-col justify-between space-y-4">
+          <div class="space-y-1">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-[#0047AB]">Study Shortcuts</span>
+            <h3 class="text-base font-bold text-[#042454]">Quick Revision Actions</h3>
+            <p class="text-xs text-[#475569]">Jump straight into active recall or timed AQA 8145 exam practice.</p>
+          </div>
+          <div class="space-y-2.5">
+            <button type="button" onclick="homeJumpRandomExam()"
+              class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-xs sm:text-sm font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
+              <span>Jump to Random Exam Question</span>
+              <span>→</span>
+            </button>
+            <button type="button" onclick="homeReviewUnlearnedFlashcards()"
+              class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-xs sm:text-sm font-bold bg-[#042454] text-[#F5B800] hover:opacity-95 transition">
+              <span>Review Unlearned Flashcards</span>
+              <span>→</span>
+            </button>
+            <a href="#exam-guide"
+              class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold bg-[#F8FAFC] text-[#042454] border border-[#E2E8F0] hover:border-[#BFDBFE] hover:bg-[#EFF6FF] transition">
+              <span>View AQA Question Formulas</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Recent Marked Attempts Table -->
+        <div class="lg:col-span-8 bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden flex flex-col">
+          <div class="px-5 py-4 border-b border-[#E2E8F0] flex items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base font-bold text-[#042454]">Recent Marked Attempts</h3>
+              <p class="text-xs text-[#475569]">Your last 5 auto-marked AQA exam responses.</p>
+            </div>
+            <a href="#exam-practice" class="text-xs font-semibold text-[#0047AB] hover:underline">All 52 Questions →</a>
+          </div>
+          <div id="home-recent-attempts" class="flex-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 2: TOPICS (#topics) ==================== -->
+    <section id="page-topics" class="hidden space-y-6">
       <!-- Summary Strip -->
       <div class="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 class="text-lg font-bold text-[#00214E]">AQA GCSE History (8145) Specification Topics</h1>
-          <p class="text-sm text-slate-600 mt-0.5">Click any status pill to cycle <span class="font-medium text-slate-700">Not Started</span> → <span class="font-medium text-[#004EB3]">In Progress</span> → <span class="font-medium text-[#92400E]">Mastered</span>, or open structured revision notes.</p>
+          <h1 class="text-lg font-bold text-[#042454]">AQA GCSE History (8145) Specification Topics</h1>
+          <p class="text-sm text-[#475569] mt-0.5">Click any status pill to cycle <span class="font-medium text-[#0F172A]">Not Started</span> → <span class="font-medium text-[#0047AB]">In Progress</span> → <span class="font-medium text-[#92400E]">Mastered</span>, or open structured revision notes.</p>
         </div>
-        <div class="flex items-center gap-3 shrink-0 bg-[#F8FAFC] px-3.5 py-2.5 rounded-lg border border-slate-200">
+        <div class="flex items-center gap-3 shrink-0 bg-[#F8FAFC] px-3.5 py-2.5 rounded-lg border border-[#E2E8F0]">
           <div class="text-center">
-            <div id="stat-topics-mastered" class="text-lg font-bold text-[#004EB3]">0 / 16</div>
-            <div class="text-[11px] font-medium text-slate-500 uppercase tracking-wide">Topics Mastered</div>
+            <div id="stat-topics-mastered" class="text-lg font-bold text-[#0047AB]">0 / 16</div>
+            <div class="text-[11px] font-medium text-[#475569] uppercase tracking-wide">Topics Mastered</div>
           </div>
           <div class="h-7 w-px bg-slate-200"></div>
           <div class="text-center">
-            <div id="stat-qs-done" class="text-lg font-bold text-[#00214E]">0 / 52</div>
-            <div class="text-[11px] font-medium text-slate-500 uppercase tracking-wide">Qs Scored</div>
+            <div id="stat-qs-done" class="text-lg font-bold text-[#042454]">0 / 52</div>
+            <div class="text-[11px] font-medium text-[#475569] uppercase tracking-wide">Qs Scored</div>
           </div>
           <div class="h-7 w-px bg-slate-200"></div>
           <div class="text-center">
             <div id="stat-fc-known" class="text-lg font-bold text-emerald-700">0 / 116</div>
-            <div class="text-[11px] font-medium text-slate-500 uppercase tracking-wide">Cards Known</div>
+            <div class="text-[11px] font-medium text-[#475569] uppercase tracking-wide">Cards Known</div>
           </div>
         </div>
       </div>
@@ -227,17 +290,17 @@
       <div id="topics-list-container" class="space-y-5"></div>
     </section>
 
-    <!-- ==================== TAB 2: EXAM PRACTICE (52 QUESTIONS) ==================== -->
-    <section id="view-exam" class="hidden space-y-5">
+    <!-- ==================== PAGE 3: EXAM PRACTICE (#exam-practice) ==================== -->
+    <section id="page-exam-practice" class="hidden space-y-5">
       <!-- Filter & Random Question Bar -->
       <div class="bg-white border border-[#E2E8F0] rounded-xl p-4 space-y-3">
         <div class="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h2 class="text-lg font-bold text-[#00214E]">Auto-Marked AQA 8145 Exam Practice</h2>
-            <p class="text-xs sm:text-sm text-slate-600">52 authentic exam questions with strict topical relevance checking, AO feedback, and Grade 9 exemplars.</p>
+            <h2 class="text-lg font-bold text-[#042454]">Auto-Marked AQA 8145 Exam Practice</h2>
+            <p class="text-xs sm:text-sm text-[#475569]">52 authentic exam questions with strict topical relevance checking, AO feedback, and Grade 9 exemplars.</p>
           </div>
           <button type="button" onclick="pickRandomQuestion()"
-            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-[#00214E] text-[#FFC300] hover:bg-[#004EB3] hover:text-white transition">
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-[#042454] text-[#F5B800] hover:bg-[#0047AB] hover:text-white transition">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
@@ -248,7 +311,7 @@
         <div class="flex flex-wrap items-center gap-4 pt-2 border-t border-slate-100">
           <!-- Unit Filters -->
           <div class="flex flex-wrap items-center gap-1.5">
-            <span class="text-xs font-semibold text-slate-500 mr-1">Paper:</span>
+            <span class="text-xs font-semibold text-[#475569] mr-1">Paper:</span>
             <button type="button" data-exam-unit="ALL" onclick="setExamUnitFilter('ALL')" class="exam-unit-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">All (52)</button>
             <button type="button" data-exam-unit="1A" onclick="setExamUnitFilter('1A')" class="exam-unit-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">1A America</button>
             <button type="button" data-exam-unit="1B" onclick="setExamUnitFilter('1B')" class="exam-unit-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">1B Conflict</button>
@@ -258,13 +321,21 @@
 
           <!-- Mark Filters -->
           <div class="flex flex-wrap items-center gap-1.5">
-            <span class="text-xs font-semibold text-slate-500 mr-1">Marks:</span>
+            <span class="text-xs font-semibold text-[#475569] mr-1">Marks:</span>
             <button type="button" data-exam-mark="ALL" onclick="setExamMarkFilter('ALL')" class="exam-mark-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">All</button>
             <button type="button" data-exam-mark="4" onclick="setExamMarkFilter('4')" class="exam-mark-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">4m (20)</button>
             <button type="button" data-exam-mark="8" onclick="setExamMarkFilter('8')" class="exam-mark-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">8m (18)</button>
             <button type="button" data-exam-mark="12" onclick="setExamMarkFilter('12')" class="exam-mark-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">12m (8)</button>
             <button type="button" data-exam-mark="16" onclick="setExamMarkFilter('16')" class="exam-mark-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition">16m+4 (6)</button>
           </div>
+        </div>
+
+        <!-- Quick Question Selector Dropdown (Clean navigation without search box) -->
+        <div class="pt-2 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center gap-2">
+          <label for="exam-question-dropdown" class="text-xs font-semibold text-[#475569] shrink-0">Jump to Question:</label>
+          <select id="exam-question-dropdown" onchange="selectExamQuestion(this.value)"
+            class="w-full rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2 text-xs font-medium text-[#0F172A]">
+          </select>
         </div>
       </div>
 
@@ -273,8 +344,8 @@
         <!-- Left Question List -->
         <div class="lg:col-span-4 bg-white border border-[#E2E8F0] rounded-xl p-3 flex flex-col max-h-[640px]">
           <div class="flex items-center justify-between px-1 pb-2 border-b border-slate-100">
-            <span id="exam-filtered-count" class="text-xs font-semibold text-slate-600">Showing 52 questions</span>
-            <span id="exam-unit-badge-summary" class="text-[11px] font-medium text-[#004EB3]">Select to attempt</span>
+            <span id="exam-filtered-count" class="text-xs font-semibold text-[#475569]">Showing 52 questions</span>
+            <span id="exam-unit-badge-summary" class="text-[11px] font-medium text-[#0047AB]">Select to attempt</span>
           </div>
           <div id="exam-question-list" class="mt-2 space-y-1.5 overflow-y-auto pr-1 flex-1"></div>
         </div>
@@ -286,18 +357,18 @@
       </div>
     </section>
 
-    <!-- ==================== TAB 3: FLASHCARDS (116 CARDS) ==================== -->
-    <section id="view-flashcards" class="hidden space-y-5">
+    <!-- ==================== PAGE 4: FLASHCARDS (#flashcards) ==================== -->
+    <section id="page-flashcards" class="hidden space-y-5">
       <!-- Controls Card -->
       <div class="bg-white border border-[#E2E8F0] rounded-xl p-4 space-y-3">
         <div class="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h2 class="text-lg font-bold text-[#00214E]">Active-Recall Flashcards (116 Cards)</h2>
-            <p class="text-xs sm:text-sm text-slate-600">29 high-yield cards per AQA paper. Press <kbd class="px-1.5 py-0.5 text-[11px] bg-slate-100 border border-slate-300 rounded">Space</kbd> to flip and <kbd class="px-1.5 py-0.5 text-[11px] bg-slate-100 border border-slate-300 rounded">←</kbd> / <kbd class="px-1.5 py-0.5 text-[11px] bg-slate-100 border border-slate-300 rounded">→</kbd> to navigate.</p>
+            <h2 class="text-lg font-bold text-[#042454]">Active-Recall Flashcards (116 Cards)</h2>
+            <p class="text-xs sm:text-sm text-[#475569]">29 high-yield cards per AQA paper. Press <kbd class="px-1.5 py-0.5 text-[11px] bg-slate-100 border border-slate-300 rounded">Space</kbd> to flip and <kbd class="px-1.5 py-0.5 text-[11px] bg-slate-100 border border-slate-300 rounded">←</kbd> / <kbd class="px-1.5 py-0.5 text-[11px] bg-slate-100 border border-slate-300 rounded">→</kbd> to navigate.</p>
           </div>
 
           <!-- Mode Toggle -->
-          <div class="inline-flex rounded-lg bg-slate-100 p-1 border border-slate-200">
+          <div class="inline-flex rounded-lg bg-slate-100 p-1 border border-[#E2E8F0]">
             <button type="button" id="fc-mode-flip" onclick="setFlashcardMode('flip')"
               class="px-3 py-1.5 rounded-md text-xs font-semibold transition">
               Flip Cards
@@ -322,7 +393,7 @@
           <div class="md:col-span-4">
             <label for="fc-subtopic-select" class="sr-only">Filter by Sub-Topic</label>
             <select id="fc-subtopic-select" onchange="setFcSubtopic(this.value)"
-              class="w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">
+              class="w-full rounded-lg border border-[#E2E8F0] bg-white px-3 py-1.5 text-xs font-medium text-[#0F172A]">
               <option value="ALL">All 16 Sub-Topics</option>
             </select>
           </div>
@@ -339,16 +410,16 @@
       <div id="flashcard-workspace"></div>
     </section>
 
-    <!-- ==================== TAB 4: EXAM GUIDE ==================== -->
-    <section id="view-guide" class="hidden space-y-6">
+    <!-- ==================== PAGE 5: EXAM GUIDE (#exam-guide) ==================== -->
+    <section id="page-exam-guide" class="hidden space-y-6">
       <!-- Question Stems Reference Table -->
       <div class="bg-white border border-[#E2E8F0] rounded-xl overflow-hidden">
-        <div class="p-5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+        <div class="p-5 border-b border-[#E2E8F0] flex flex-wrap items-center justify-between gap-2">
           <div>
-            <h2 class="text-lg font-bold text-[#00214E]">AQA GCSE History (8145) Question Stems & Structure Guide</h2>
-            <p class="text-sm text-slate-600 mt-0.5">Exact timing, Assessment Objectives, and paragraph formulas for every paper.</p>
+            <h2 class="text-lg font-bold text-[#042454]">AQA GCSE History (8145) Question Stems & Structure Guide</h2>
+            <p class="text-sm text-[#475569] mt-0.5">Exact timing, Assessment Objectives, and paragraph formulas for every paper.</p>
           </div>
-          <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-[#FFFBEB] text-[#92400E] border border-[#FFC300]/50">
+          <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]/60">
             2 Papers • 2 Hours Each • 168 Total Marks
           </span>
         </div>
@@ -356,7 +427,7 @@
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse text-sm">
             <thead>
-              <tr class="bg-[#00214E] text-white text-xs uppercase tracking-wider">
+              <tr class="bg-[#042454] text-white text-xs uppercase tracking-wider">
                 <th class="py-3 px-4 font-semibold">Paper & Question</th>
                 <th class="py-3 px-4 font-semibold">Typical AQA Stem</th>
                 <th class="py-3 px-4 font-semibold">Marks & Time</th>
@@ -366,105 +437,105 @@
             </thead>
             <tbody class="divide-y divide-slate-200 text-slate-700">
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1A Q1 (Interpretations)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1A Q1 (Interpretations)</td>
                 <td class="py-3 px-4">How does Interpretation B differ from Interpretation A about...?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">4 marks</span> • 5m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">4 marks</span> • 5m</td>
                 <td class="py-3 px-4 font-medium">AO4</td>
                 <td class="py-3 px-4">Quote/paraphrase View B + contrast directly with View A. Focus strictly on <em>content</em>, not provenance.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1A Q2 (Interpretations)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1A Q2 (Interpretations)</td>
                 <td class="py-3 px-4">Why might the authors of Interpretations A and B have a different interpretation...?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">4 marks</span> • 5m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">4 marks</span> • 5m</td>
                 <td class="py-3 px-4 font-medium">AO4</td>
                 <td class="py-3 px-4">Analyse <strong>provenance</strong> (who, when, purpose, audience) for both A and B and link to historical context.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1A Q3 (Interpretations)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1A Q3 (Interpretations)</td>
                 <td class="py-3 px-4">Which interpretation gives the more convincing opinion about...?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">8 marks</span> • 10m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">8 marks</span> • 10m</td>
                 <td class="py-3 px-4 font-medium">AO4</td>
                 <td class="py-3 px-4">Para 1: Test A against contextual knowledge (accurate vs. exaggerated). Para 2: Test B. Para 3: Clear comparative judgement.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1A Q4 (Describe)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1A Q4 (Describe)</td>
                 <td class="py-3 px-4">Describe two problems / features / ways in which...</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">4 marks</span> • 5m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">4 marks</span> • 5m</td>
                 <td class="py-3 px-4 font-medium">AO1</td>
                 <td class="py-3 px-4">2 crisp points, each supported by 1–2 specific historical facts, dates, acts, or statistics. No introduction needed.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1A Q5 (Consequence/Change)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1A Q5 (Consequence/Change)</td>
                 <td class="py-3 px-4">In what ways were the lives of... affected by...?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">8 marks</span> • 10m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">8 marks</span> • 10m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
                 <td class="py-3 px-4">2–3 PEEL paragraphs showing <em>change over time</em> or impact on different social groups (e.g., rich vs. poor, women, African Americans).</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1A Q6 (Two-Bullet Essay)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1A Q6 (Two-Bullet Essay)</td>
                 <td class="py-3 px-4">Which of the following was the more important reason why...? (2 bullets)</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">12 marks</span> • 15m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">12 marks</span> • 15m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
                 <td class="py-3 px-4">Para 1: Bullet 1 + specific evidence + link to question. Para 2: Bullet 2 + evidence. Conclusion: Directly weigh Bullet 1 vs. Bullet 2.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1B Q1 (Source Analysis)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1B Q1 (Source Analysis)</td>
                 <td class="py-3 px-4">Source A supports / opposes... How do you know?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">4 marks</span> • 5m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">4 marks</span> • 5m</td>
                 <td class="py-3 px-4 font-medium">AO3</td>
                 <td class="py-3 px-4">Identify 1–2 details in the source/cartoon + explain using contextual knowledge what those details mean.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1B Q2 (Source Utility)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1B Q2 (Source Utility)</td>
                 <td class="py-3 px-4">How useful are Sources B and C to a historian studying...?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">12 marks</span> • 15m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">12 marks</span> • 15m</td>
                 <td class="py-3 px-4 font-medium">AO3</td>
                 <td class="py-3 px-4">Para 1: Source B Content + Provenance (COP) + Context. Para 2: Source C Content + Provenance + Context. Conclusion: Combined utility.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1B Q3 (Write an Account)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1B Q3 (Write an Account)</td>
                 <td class="py-3 px-4">Write an account of how... became an international crisis / led to...</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">8 marks</span> • 10m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">8 marks</span> • 10m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
                 <td class="py-3 px-4">Chronological causal chain (Trigger → Escalation → Wider consequence). Use connective phrases ("This provoked...", "As a result...").</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">1B Q4 (Statement Essay)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">1B Q4 (Statement Essay)</td>
                 <td class="py-3 px-4">‘Statement.’ How far do you agree with this statement?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">16m + 4 SPaG</span> • 20m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">16m + 4 SPaG</span> • 20m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
                 <td class="py-3 px-4">Para 1: Agree with stated factor. Para 2 & 3: Counter-factors. Conclusion: Sustained, weighed judgement ("How far?").</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">2A Q1 (Health Source)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">2A Q1 (Health Source)</td>
                 <td class="py-3 px-4">How useful is Source A to a historian studying...?</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">8 marks</span> • 10m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">8 marks</span> • 10m</td>
                 <td class="py-3 px-4 font-medium">AO3</td>
                 <td class="py-3 px-4">Para 1: What Source A shows (content) + contextual accuracy. Para 2: Nature, Origin, Purpose (NOP) + limitations. Mini-conclusion.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">2A Q2 & Q3 (Significance / Compare)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">2A Q2 & Q3 (Significance / Compare)</td>
                 <td class="py-3 px-4">Explain the significance of... / Explain two ways in which X and Y were similar/different.</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">8 marks each</span> • 10m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">8 marks each</span> • 10m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
                 <td class="py-3 px-4">For Significance: Short-term impact + Long-term impact. For Similarity/Difference: 2 clear thematic comparisons across both periods.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">2A Q4 (Thematic Factors Essay)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">2A Q4 (Thematic Factors Essay)</td>
                 <td class="py-3 px-4">Has [Factor] been the main factor in...? Explain your answer across periods.</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">16m + 4 SPaG</span> • 20m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">16m + 4 SPaG</span> • 20m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
                 <td class="py-3 px-4">3–4 factor paragraphs spanning Medieval, Renaissance, 19th-C, and Modern eras + sustained comparative conclusion.</td>
               </tr>
               <tr class="hover:bg-[#EFF6FF]/40">
-                <td class="py-3 px-4 font-semibold text-[#00214E]">2B Q1–Q3 (Elizabethan Depth)</td>
+                <td class="py-3 px-4 font-semibold text-[#042454]">2B Q1–Q3 (Elizabethan Depth)</td>
                 <td class="py-3 px-4">Q1: How convincing is Interpretation A? (8m) • Q2: Explain what was important about... (8m) • Q3: Write an account... (8m)</td>
-                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#004EB3]">8 marks each</span> • 10m</td>
+                <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#0047AB]">8 marks each</span> • 10m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2, AO4</td>
                 <td class="py-3 px-4">Q1: Test content against Elizabethan knowledge (ignore provenance). Q2: 2 explained areas of importance. Q3: Causal narrative.</td>
               </tr>
               <tr class="bg-[#FFFBEB]/60 hover:bg-[#FFFBEB]">
-                <td class="py-3 px-4 font-bold text-[#00214E]">2B Q4 (2027 Historic Environment)</td>
+                <td class="py-3 px-4 font-bold text-[#042454]">2B Q4 (2027 Historic Environment)</td>
                 <td class="py-3 px-4">‘Statement about the Spanish Armada (1588).’ How far does a study of the Spanish Armada support this statement?</td>
                 <td class="py-3 px-4 whitespace-nowrap"><span class="font-bold text-[#92400E]">16m + 4 SPaG</span> • 20m</td>
                 <td class="py-3 px-4 font-medium">AO1, AO2</td>
@@ -475,53 +546,45 @@
         </div>
       </div>
 
-      <!-- Two-Column Framework Cards: 7 AQA Health Factors & 2027 Historic Environment -->
+      <!-- Two-Column Framework Cards: 7 AQA Health Factors & 2027 Historic Environment 7-Criteria Checklist -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <!-- 7 AQA Health Factors -->
         <div class="bg-white border border-[#E2E8F0] rounded-xl p-5 space-y-3">
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-[#059669]"></span>
-            <h3 class="text-base font-bold text-[#00214E]">Paper 2A: The 7 AQA Health Factors</h3>
+            <h3 class="text-base font-bold text-[#042454]">Paper 2A: The 7 AQA Health Factors</h3>
           </div>
-          <p class="text-xs text-slate-600">Use these 7 thematic lenses to structure every 16-mark (+4 SPaG) Health & the People essay:</p>
+          <p class="text-xs text-[#475569]">Use these 7 thematic lenses to structure every 16-mark (+4 SPaG) Health & the People essay:</p>
           <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">1. War:</strong> Paré's ligatures & ointments, Florence Nightingale in Crimea, X-rays/blood transfusions/plastic surgery in WWI, penicillin mass production in WWII.</li>
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">2. Superstition & Religion:</strong> Church preserving Galen's works & banning dissection; Islamic hospitals (Rhazes, Avicenna); flagellants during the Black Death.</li>
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">3. Chance:</strong> Paré running out of boiling oil (1537); Pasteur's assistant leaving chicken cholera out (1879); Fleming's stray <em>Penicillium</em> mould spore (1928).</li>
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">4. Government:</strong> 1848 & 1875 Public Health Acts, Bazalgette's London sewers, Liberal Reforms (1906–11), founding of the NHS by Aneurin Bevan (1948).</li>
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">5. Communication:</strong> Printing press spreading Vesalius's <em>Fabric of the Human Body</em> (1543); Royal Society; Lancet journal; US government funding Florey & Chain.</li>
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">6. Science & Technology:</strong> Microscopes (Leeuwenhoek), Koch's agar jelly & chemical dyes, X-rays (Röntgen), DNA structure (1953), MRI & keyhole surgery.</li>
-            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200"><strong class="text-[#00214E]">7. Role of the Individual:</strong> Hippocrates, Galen, Vesalius, Harvey, Jenner, Snow, Simpson, Lister, Pasteur, Koch, Fleming, Florey & Chain.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">1. War:</strong> Paré's ligatures & ointments, Florence Nightingale in Crimea, X-rays/blood transfusions/plastic surgery in WWI, penicillin mass production in WWII.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">2. Superstition & Religion:</strong> Church preserving Galen's works & banning dissection; Islamic hospitals (Rhazes, Avicenna); flagellants during the Black Death.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">3. Chance:</strong> Paré running out of boiling oil (1537); Pasteur's assistant leaving chicken cholera out (1879); Fleming's stray <em>Penicillium</em> mould spore (1928).</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">4. Government:</strong> 1848 & 1875 Public Health Acts, Bazalgette's London sewers, Liberal Reforms (1906–11), founding of the NHS by Aneurin Bevan (1948).</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">5. Communication:</strong> Printing press spreading Vesalius's <em>Fabric of the Human Body</em> (1543); Royal Society; Lancet journal; US government funding Florey & Chain.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">6. Science & Technology:</strong> Microscopes (Leeuwenhoek), Koch's agar jelly & chemical dyes, X-rays (Röntgen), DNA structure (1953), MRI & keyhole surgery.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#042454]">7. Role of the Individual:</strong> Hippocrates, Galen, Vesalius, Harvey, Jenner, Snow, Simpson, Lister, Pasteur, Koch, Fleming, Florey & Chain.</li>
           </ul>
         </div>
 
-        <!-- 2027 Historic Environment: The Spanish Armada -->
+        <!-- 2027 Historic Environment: The Spanish Armada 7-Criteria Checklist -->
         <div class="bg-white border border-[#E2E8F0] rounded-xl p-5 space-y-3">
           <div class="flex items-center justify-between gap-2">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-[#7C3AED]"></span>
-              <h3 class="text-base font-bold text-[#00214E]">Paper 2B: 2027 Historic Environment</h3>
+              <h3 class="text-base font-bold text-[#042454]">Paper 2B: 2027 Historic Environment</h3>
             </div>
-            <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-[#FFFBEB] text-[#92400E] border border-[#FFC300]">Spanish Armada (1588)</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]">Spanish Armada (1588)</span>
           </div>
-          <p class="text-xs text-slate-600">Specified site focus: <strong>The English Channel & the Defeat of the Spanish Armada (July–August 1588)</strong>. Link physical geography, tactics, and leadership in Q4:</p>
-          <div class="space-y-2.5 text-xs sm:text-sm text-slate-700">
-            <div class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200">
-              <strong class="text-[#004EB3]">1. Location & Geography (The English Channel):</strong> Narrow Channel waters restricted the Armada's tight crescent formation; lack of a deep-water port in the Spanish Netherlands forced Medina Sidonia to anchor exposed off Calais.
-            </div>
-            <div class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200">
-              <strong class="text-[#004EB3]">2. Naval Tactics & Leadership:</strong> Lord Howard of Effingham and Sir Francis Drake used long-range culverins to avoid Spanish grappling/boarding. On 7 August, 8 English fireships panicked the Armada into cutting cables at Calais, shattering their crescent before the Battle of Gravelines (8 August).
-            </div>
-            <div class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200">
-              <strong class="text-[#004EB3]">3. Ship Design & Supplies:</strong> John Hawkins's fast, manoeuvrable "race-built" galleons out-sailed heavy Spanish galleons. Spanish provisions rotted in barrels made of unseasoned wood (after Drake's 1587 Cadiz raid destroyed seasoned staves).
-            </div>
-            <div class="p-2.5 rounded-lg bg-[#F8FAFC] border border-slate-200">
-              <strong class="text-[#004EB3]">4. Weather ("Protestant Wind"):</strong> Fierce south-westerly gales drove the battered Armada north around Scotland and rocky Irish coasts, wrecking over a third of Philip II's fleet.
-            </div>
-            <div class="p-2.5 rounded-lg bg-[#FFFBEB] border border-[#FFC300]/60">
-              <strong class="text-[#92400E]">5. Consequences for Elizabeth I:</strong> Massive propaganda victory ("Armada Portrait", Tilbury speech), confirmed England as a major naval power, and secured Protestant rule—though war with Spain continued until 1604.
-            </div>
-          </div>
+          <p class="text-xs text-[#475569]">AQA 7-Criteria Checklist for <strong>The English Channel & Defeat of the Spanish Armada (1588)</strong>:</p>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#0047AB]">1. Location:</strong> The narrow English Channel, Calais anchorage (lacking a deep-water Spanish port), and Gravelines off the Flemish coast.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#0047AB]">2. Function:</strong> Strategic sea lane intended as Philip II’s invasion corridor to ferry the Duke of Parma’s 27,000 troops from the Netherlands to Kent.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#0047AB]">3. Structure & Ship Design:</strong> John Hawkins’s fast, low "race-built" English galleons vs. tall, heavy Spanish galleons designed for close grappling and boarding.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#0047AB]">4. People Connected:</strong> Lord Howard of Effingham, Sir Francis Drake, John Hawkins, Philip II of Spain, Duke of Medina Sidonia, and Duke of Parma.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#0047AB]">5. Tactical Design & Armaments:</strong> English long-range culverins firing broadsides outside boarding range vs. Spanish defensive crescent formation.</li>
+            <li class="p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0]"><strong class="text-[#0047AB]">6. Culture, Religion & Values:</strong> Catholic Crusade backed by Pope Sixtus V vs. English Protestant survival, Tilbury speech patriotism, and the Armada Portrait.</li>
+            <li class="p-2.5 rounded-lg bg-[#FFFBEB] border border-[#F5B800]/60"><strong class="text-[#92400E]">7. Key Turning-Point Events:</strong> Cadiz Raid (1587), 8 English fireships at Calais (7 Aug 1588), Battle of Gravelines (8 Aug), and the "Protestant Wind" shipwrecks.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -530,10 +593,10 @@
 
   <!-- ==================== MODAL 1: TOPIC STUDY & 4-QUESTION CHECK ==================== -->
   <div id="study-modal" class="fixed inset-0 z-40 hidden bg-slate-900/50 backdrop-blur-xs flex items-center justify-center p-4">
-    <div class="bg-white border border-slate-200 rounded-2xl max-w-2xl w-full max-h-[88vh] flex flex-col shadow-xl overflow-hidden">
-      <div class="px-5 py-4 bg-[#00214E] text-white flex items-center justify-between gap-3">
+    <div class="bg-white border border-[#E2E8F0] rounded-2xl max-w-2xl w-full max-h-[88vh] flex flex-col shadow-xl overflow-hidden">
+      <div class="px-5 py-4 bg-[#042454] text-white flex items-center justify-between gap-3">
         <div>
-          <span id="study-modal-unit" class="text-[11px] font-bold uppercase tracking-wider text-[#FFC300]">Paper 1A</span>
+          <span id="study-modal-unit" class="text-[11px] font-bold uppercase tracking-wider text-[#F5B800]">Paper 1A</span>
           <h3 id="study-modal-title" class="text-lg font-bold leading-snug">Sub-Topic Title</h3>
         </div>
         <button type="button" onclick="closeStudyModal()" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition" aria-label="Close modal">
@@ -543,14 +606,14 @@
         </button>
       </div>
       <div id="study-modal-body" class="p-5 overflow-y-auto space-y-5 text-sm text-slate-700 flex-1"></div>
-      <div class="px-5 py-3.5 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+      <div class="px-5 py-3.5 bg-[#F8FAFC] border-t border-[#E2E8F0] flex flex-wrap items-center justify-between gap-2">
         <button type="button" id="study-modal-master-btn" onclick="markCurrentStudyTopicMastered()"
-          class="px-4 py-2 rounded-lg text-xs font-bold bg-[#FFC300] text-[#00214E] hover:brightness-95 transition">
+          class="px-4 py-2 rounded-lg text-xs font-bold bg-[#F5B800] text-[#042454] hover:brightness-95 transition">
           Mark Topic as Mastered
         </button>
         <div class="flex items-center gap-2">
           <button type="button" id="study-modal-practice-btn"
-            class="px-4 py-2 rounded-lg text-xs font-semibold bg-[#004EB3] text-white hover:bg-[#003B8E] transition">
+            class="px-4 py-2 rounded-lg text-xs font-semibold bg-[#0047AB] text-white hover:bg-[#003580] transition">
             Jump to Exam Questions →
           </button>
           <button type="button" onclick="closeStudyModal()"
@@ -562,46 +625,46 @@
     </div>
   </div>
 
-  <!-- ==================== MODAL 2: BACKUP / RESTORE JSON ==================== -->
-  <div id="backup-modal" class="fixed inset-0 z-40 hidden bg-slate-900/50 backdrop-blur-xs flex items-center justify-center p-4">
-    <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full shadow-xl overflow-hidden">
-      <div class="px-5 py-4 bg-[#00214E] text-white flex items-center justify-between">
-        <h3 class="text-base font-bold">Backup & Restore Revision Progress</h3>
-        <button type="button" onclick="closeBackupModal()" class="p-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10" aria-label="Close">
+  <!-- ==================== MODAL 2: STUDENT ACCOUNTS, SIGN IN & PORTABILITY ==================== -->
+  <div id="account-modal" class="fixed inset-0 z-40 hidden bg-slate-900/50 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white border border-[#E2E8F0] rounded-2xl max-w-xl w-full max-h-[90vh] flex flex-col shadow-xl overflow-hidden">
+      <div class="px-5 py-4 bg-[#042454] text-white flex items-center justify-between">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[#F5B800]">History Genie Student Profiles</span>
+          <h3 class="text-base font-bold">Accounts, Sign In & Cross-Device Backup</h3>
+        </div>
+        <button type="button" onclick="closeAccountModal()" class="p-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10" aria-label="Close">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
-      <div class="p-5 space-y-4 text-sm">
-        <p class="text-xs text-slate-600">Your progress is automatically saved in this browser under <code class="px-1.5 py-0.5 bg-slate-100 rounded text-[#00214E]">history_genie_aqa_v5</code>. Copy your JSON backup below or paste an existing backup to restore it.</p>
-        <div>
-          <label for="backup-json-area" class="block text-xs font-semibold text-slate-700 mb-1">Revision Progress JSON</label>
-          <textarea id="backup-json-area" rows="6" class="w-full rounded-xl border border-slate-300 p-3 font-mono text-xs text-slate-800 bg-[#F8FAFC]"></textarea>
-        </div>
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <div class="flex flex-wrap items-center gap-2">
-            <button type="button" onclick="copyBackupJson()" class="px-3.5 py-2 rounded-lg text-xs font-semibold bg-[#004EB3] text-white hover:bg-[#003B8E] transition">
-              Copy JSON
-            </button>
-            <button type="button" onclick="restoreBackupJson()" class="px-3.5 py-2 rounded-lg text-xs font-semibold bg-[#00214E] text-[#FFC300] hover:opacity-95 transition">
-              Restore from JSON
-            </button>
-          </div>
-          <!-- Two-step safe reset without browser confirm() -->
-          <button type="button" id="reset-progress-btn" onclick="handleResetProgressClick()" class="px-3 py-2 rounded-lg text-xs font-semibold text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 transition">
-            Reset All Progress
-          </button>
-        </div>
+
+      <!-- Modal Sub-Navigation -->
+      <div class="flex border-b border-[#E2E8F0] bg-[#F8FAFC] px-4 pt-2 gap-1">
+        <button type="button" id="acct-tab-profiles" onclick="switchAccountTab('profiles')"
+          class="px-3.5 py-2 text-xs font-bold rounded-t-lg border-b-2 transition">
+          Profiles & Sign In
+        </button>
+        <button type="button" id="acct-tab-create" onclick="switchAccountTab('create')"
+          class="px-3.5 py-2 text-xs font-bold rounded-t-lg border-b-2 transition">
+          Create Account
+        </button>
+        <button type="button" id="acct-tab-portability" onclick="switchAccountTab('portability')"
+          class="px-3.5 py-2 text-xs font-bold rounded-t-lg border-b-2 transition">
+          Export / Import Account
+        </button>
       </div>
+
+      <div id="account-modal-body" class="p-5 overflow-y-auto space-y-4 text-sm flex-1"></div>
     </div>
   </div>
 
   <!-- Minimal Footer -->
-  <footer class="border-t border-slate-200 bg-white mt-10">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+  <footer class="border-t border-[#E2E8F0] bg-white mt-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[#475569]">
       <div class="flex items-center gap-2">
-        <span class="font-bold text-[#00214E]">History Genie</span>
+        <span class="font-bold text-[#042454]">History Genie</span>
         <span>•</span>
         <span>AQA GCSE History (8145) Revision & Exam Practice</span>
       </div>
@@ -611,18 +674,30 @@
 
   <script>
     /* ============================================================================
-       1. PERSISTENCE & APPLICATION STATE ('history_genie_aqa_v5')
+       1. MULTI-USER ACCOUNTS, HASHED PIN AUTH & ISOLATED PERSISTENCE
        ============================================================================ */
-    const STORAGE_KEY = 'history_genie_aqa_v5';
+    const GUEST_STORAGE_KEY = 'history_genie_aqa_v5';
+    const USERS_DB_KEY = 'history_genie_aqa_users_v1';
 
-    const DEFAULT_STATE = {
+    const DEFAULT_PROGRESS = {
       topicStatus: {},   // { [topicId]: 'not_started' | 'in_progress' | 'mastered' }
       fcKnown: {},       // { [cardId]: true }
-      examScores: {},    // { [qId]: { score: number, max: number, answer: string } }
+      examScores: {},    // { [qId]: { score: number, max: number, answer: string, lastResult: object, timestamp: number } }
+      targetGrade: 7,
     };
 
-    let appState = loadState();
-    let activeTab = 'topics';
+    const AVATAR_COLORS = [
+      { hex: '#0047AB', name: 'Royal Blue' },
+      { hex: '#042454', name: 'Deep Navy' },
+      { hex: '#059669', name: 'Emerald' },
+      { hex: '#D97706', name: 'Amber' },
+      { hex: '#7C3AED', name: 'Purple' },
+      { hex: '#DC2626', name: 'Crimson' },
+    ];
+
+    let usersDb = loadUsersDb();
+    let appState = loadActiveProfileState();
+    let activePage = 'home';
     let examUnitFilter = 'ALL';
     let examMarkFilter = 'ALL';
     let selectedExamQId = 'q1';
@@ -636,30 +711,136 @@
     let quizSelectedOption = null;
     let quizStreak = 0;
     let activeStudyTopicId = null;
+    let activeAccountTab = 'profiles';
+    let selectedLoginUserId = null;
+    let newAvatarColor = '#0047AB';
     let resetConfirmArmed = false;
 
-    function loadState() {
+    function loadUsersDb() {
       try {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (!raw) return JSON.parse(JSON.stringify(DEFAULT_STATE));
+        const raw = localStorage.getItem(USERS_DB_KEY);
+        if (!raw) return { activeUserId: 'guest', users: {} };
+        const parsed = JSON.parse(raw);
+        return {
+          activeUserId: parsed.activeUserId || 'guest',
+          users: parsed.users && typeof parsed.users === 'object' ? parsed.users : {},
+        };
+      } catch (err) {
+        return { activeUserId: 'guest', users: {} };
+      }
+    }
+
+    function saveUsersDb() {
+      try {
+        localStorage.setItem(USERS_DB_KEY, JSON.stringify(usersDb));
+      } catch (err) {
+        // Ignore quota error gracefully
+      }
+    }
+
+    function getActiveUser() {
+      if (usersDb.activeUserId && usersDb.activeUserId !== 'guest' && usersDb.users[usersDb.activeUserId]) {
+        return usersDb.users[usersDb.activeUserId];
+      }
+      usersDb.activeUserId = 'guest';
+      return null;
+    }
+
+    function loadGuestState() {
+      try {
+        const raw = localStorage.getItem(GUEST_STORAGE_KEY);
+        if (!raw) return JSON.parse(JSON.stringify(DEFAULT_PROGRESS));
         const parsed = JSON.parse(raw);
         return {
           topicStatus: parsed.topicStatus || {},
           fcKnown: parsed.fcKnown || {},
           examScores: parsed.examScores || {},
+          targetGrade: parsed.targetGrade || 7,
         };
       } catch (err) {
-        return JSON.parse(JSON.stringify(DEFAULT_STATE));
+        return JSON.parse(JSON.stringify(DEFAULT_PROGRESS));
       }
     }
 
+    function loadActiveProfileState() {
+      const user = getActiveUser();
+      if (user) {
+        return {
+          topicStatus: user.data.topicStatus || {},
+          fcKnown: user.data.fcKnown || {},
+          examScores: user.data.examScores || {},
+          targetGrade: user.targetGrade || 7,
+        };
+      }
+      return loadGuestState();
+    }
+
     function saveState() {
+      const user = getActiveUser();
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+        if (user) {
+          user.targetGrade = appState.targetGrade || 7;
+          user.data = {
+            topicStatus: appState.topicStatus,
+            fcKnown: appState.fcKnown,
+            examScores: appState.examScores,
+          };
+          saveUsersDb();
+        } else {
+          localStorage.setItem(GUEST_STORAGE_KEY, JSON.stringify(appState));
+        }
       } catch (err) {
         // Ignore storage quota errors gracefully
       }
-      updateMasteryHeader();
+      updateHeaderUI();
+    }
+
+    /* SHA-256 via Web Crypto API with deterministic fallback hash so PINs work on any protocol */
+    async function hashPin(pin) {
+      const clean = String(pin).trim();
+      try {
+        if (window.crypto && window.crypto.subtle) {
+          const buf = new TextEncoder().encode('hg_aqa_8145_' + clean);
+          const digest = await window.crypto.subtle.digest('SHA-256', buf);
+          const hex = Array.from(new Uint8Array(digest)).map(b => b.toString(16).padStart(2, '0')).join('');
+          return 'sha256:' + hex;
+        }
+      } catch (err) {
+        // Fallback below
+      }
+      let h1 = 0xdeadbeef ^ clean.length;
+      let h2 = 0x41c6ce57 ^ clean.length;
+      for (let i = 0; i < clean.length; i++) {
+        const ch = clean.charCodeAt(i);
+        h1 = Math.imul(h1 ^ ch, 2654435761);
+        h2 = Math.imul(h2 ^ ch, 1597334677);
+      }
+      h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+      h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+      return 'fb:' + (h2 >>> 0).toString(16).padStart(8, '0') + (h1 >>> 0).toString(16).padStart(8, '0');
+    }
+
+    function fallbackHashOnly(pin) {
+      const clean = String(pin).trim();
+      let h1 = 0xdeadbeef ^ clean.length;
+      let h2 = 0x41c6ce57 ^ clean.length;
+      for (let i = 0; i < clean.length; i++) {
+        const ch = clean.charCodeAt(i);
+        h1 = Math.imul(h1 ^ ch, 2654435761);
+        h2 = Math.imul(h2 ^ ch, 1597334677);
+      }
+      h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+      h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+      return 'fb:' + (h2 >>> 0).toString(16).padStart(8, '0') + (h1 >>> 0).toString(16).padStart(8, '0');
+    }
+
+    async function verifyPin(pin, storedHash) {
+      if (!storedHash) return true;
+      if (storedHash.startsWith('fb:')) {
+        return fallbackHashOnly(pin) === storedHash;
+      }
+      const computed = await hashPin(pin);
+      return computed === storedHash;
     }
 
     function showToast(msg) {
@@ -670,7 +851,7 @@
       clearTimeout(window._toastTimer);
       window._toastTimer = setTimeout(() => {
         banner.classList.add('hidden');
-      }, 2800);
+      }, 3000);
     }
 
     /* ============================================================================
@@ -1912,57 +2093,465 @@
     ];
 
     /* ============================================================================
-       5. TAB NAVIGATION & HEADER MASTERY METER
+       5. TRUE MULTI-PAGE HASH ROUTER (#home, #topics, #exam-practice, #flashcards, #exam-guide)
        ============================================================================ */
-    function switchTab(tabName) {
-      activeTab = tabName;
-      ['topics', 'exam', 'flashcards', 'guide'].forEach(t => {
-        const view = document.getElementById(`view-${t}`);
-        const btn = document.getElementById(`tab-btn-${t}`);
-        if (t === tabName) {
-          view.classList.remove('hidden');
-          btn.classList.add('border-[#004EB3]', 'text-[#004EB3]');
-          btn.classList.remove('border-transparent', 'text-slate-600', 'hover:text-[#00214E]');
+    const VALID_PAGES = ['home', 'topics', 'exam-practice', 'flashcards', 'exam-guide'];
+
+    function getRouteFromHash() {
+      const raw = (window.location.hash || '').replace(/^#/, '').toLowerCase();
+      return VALID_PAGES.includes(raw) ? raw : 'home';
+    }
+
+    function navigateTo(pageName) {
+      const target = VALID_PAGES.includes(pageName) ? pageName : 'home';
+      if (window.location.hash !== `#${target}`) {
+        window.location.hash = `#${target}`;
+      } else {
+        applyRoute(target);
+      }
+    }
+
+    function applyRoute(pageName) {
+      activePage = VALID_PAGES.includes(pageName) ? pageName : 'home';
+
+      VALID_PAGES.forEach(p => {
+        const section = document.getElementById(`page-${p}`);
+        const navLink = document.getElementById(`nav-link-${p}`);
+        if (!section || !navLink) return;
+
+        if (p === activePage) {
+          section.classList.remove('hidden');
+          navLink.classList.add('border-[#0047AB]', 'text-[#0047AB]');
+          navLink.classList.remove('border-transparent', 'text-[#475569]', 'hover:text-[#042454]');
         } else {
-          view.classList.add('hidden');
-          btn.classList.remove('border-[#004EB3]', 'text-[#004EB3]');
-          btn.classList.add('border-transparent', 'text-slate-600', 'hover:text-[#00214E]');
+          section.classList.add('hidden');
+          navLink.classList.remove('border-[#0047AB]', 'text-[#0047AB]');
+          navLink.classList.add('border-transparent', 'text-[#475569]', 'hover:text-[#042454]');
         }
       });
 
-      if (tabName === 'topics') renderTopicsView();
-      if (tabName === 'exam') renderExamView();
-      if (tabName === 'flashcards') renderFlashcardsView();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (activePage === 'home') renderHomeView();
+      if (activePage === 'topics') renderTopicsView();
+      if (activePage === 'exam-practice') renderExamView();
+      if (activePage === 'flashcards') renderFlashcardsView();
     }
 
-    function updateMasteryHeader() {
+    window.addEventListener('hashchange', () => {
+      applyRoute(getRouteFromHash());
+    });
+
+    /* ============================================================================
+       6. HEADER UI, OVERALL MASTERY & WORKING GRADE ESTIMATOR
+       ============================================================================ */
+    function computeProgressMetrics() {
       const masteredTopics = TOPICS.filter(t => appState.topicStatus[t.id] === 'mastered').length;
       const inProgressTopics = TOPICS.filter(t => appState.topicStatus[t.id] === 'in_progress').length;
       const knownCards = Object.keys(appState.fcKnown).filter(id => appState.fcKnown[id]).length;
-      const scoredQs = Object.keys(appState.examScores).length;
+
+      const attemptedIds = Object.keys(appState.examScores);
+      const scoredQs = attemptedIds.length;
+      let totalEarned = 0;
+      let totalPossible = 0;
+      attemptedIds.forEach(id => {
+        const entry = appState.examScores[id];
+        if (entry && typeof entry.score === 'number' && entry.max > 0) {
+          totalEarned += entry.score;
+          totalPossible += entry.max;
+        }
+      });
+      const avgExamPct = totalPossible > 0 ? Math.round((totalEarned / totalPossible) * 100) : 0;
 
       // Weighted overall course mastery across topics (40%), flashcards (30%), and exam Qs (30%)
-      const topicPct = ((masteredTopics + inProgressTopics * 0.4) / TOPICS.length) * 40;
-      const fcPct = (knownCards / FLASHCARDS.length) * 30;
-      const qPct = (scoredQs / EXAM_QUESTIONS.length) * 30;
-      const totalPct = Math.min(100, Math.round(topicPct + fcPct + qPct));
+      const topicWeightedPct = ((masteredTopics + inProgressTopics * 0.4) / TOPICS.length) * 100;
+      const fcPct = (knownCards / FLASHCARDS.length) * 100;
+      const examCoveragePct = (scoredQs / EXAM_QUESTIONS.length) * 100;
+      const overallMasteryPct = Math.min(100, Math.round((topicWeightedPct * 0.4) + (fcPct * 0.3) + (examCoveragePct * 0.3)));
 
-      document.getElementById('header-mastery-pct').textContent = `${totalPct}%`;
-      document.getElementById('header-mastery-bar').style.width = `${totalPct}%`;
+      // Dynamic Working Grade (Grade 4 baseline up to Grade 9)
+      const examQualityPart = scoredQs > 0 ? (avgExamPct * 0.75 + examCoveragePct * 0.25) : 0;
+      const gradeComposite = (topicWeightedPct * 0.45) + (examQualityPart * 0.40) + (fcPct * 0.15);
+
+      let workingGrade = 4;
+      if (gradeComposite >= 84) workingGrade = 9;
+      else if (gradeComposite >= 69) workingGrade = 8;
+      else if (gradeComposite >= 53) workingGrade = 7;
+      else if (gradeComposite >= 36) workingGrade = 6;
+      else if (gradeComposite >= 20) workingGrade = 5;
+
+      return {
+        masteredTopics,
+        inProgressTopics,
+        knownCards,
+        scoredQs,
+        avgExamPct,
+        overallMasteryPct,
+        workingGrade,
+        hasAnyActivity: masteredTopics > 0 || inProgressTopics > 0 || knownCards > 0 || scoredQs > 0,
+      };
+    }
+
+    function updateHeaderUI() {
+      const m = computeProgressMetrics();
+      document.getElementById('header-mastery-pct').textContent = `${m.overallMasteryPct}%`;
+      document.getElementById('header-mastery-bar').style.width = `${m.overallMasteryPct}%`;
 
       const statTopics = document.getElementById('stat-topics-mastered');
       const statQs = document.getElementById('stat-qs-done');
       const statFc = document.getElementById('stat-fc-known');
-      if (statTopics) statTopics.textContent = `${masteredTopics} / 16`;
-      if (statQs) statQs.textContent = `${scoredQs} / 52`;
-      if (statFc) statFc.textContent = `${knownCards} / 116`;
+      if (statTopics) statTopics.textContent = `${m.masteredTopics} / 16`;
+      if (statQs) statQs.textContent = `${m.scoredQs} / 52`;
+      if (statFc) statFc.textContent = `${m.knownCards} / 116`;
+
+      // Update Account badge in header
+      const user = getActiveUser();
+      const badge = document.getElementById('header-avatar-badge');
+      const label = document.getElementById('header-account-label');
+      if (user) {
+        badge.textContent = user.username.charAt(0).toUpperCase();
+        badge.style.backgroundColor = user.avatarColor || '#0047AB';
+        badge.style.color = '#FFFFFF';
+        label.textContent = `${user.username} • G${user.targetGrade}`;
+      } else {
+        badge.textContent = 'G';
+        badge.style.backgroundColor = '#E2E8F0';
+        badge.style.color = '#042454';
+        label.textContent = 'Guest — Sign In';
+      }
     }
 
     /* ============================================================================
-       6. TAB 1: TOPICS VIEW, 3-STATE MASTERY CYCLING & STUDY MODAL
+       7. PAGE 1: HOME / SUMMARY DASHBOARD (#home)
+       ============================================================================ */
+    function renderHomeView() {
+      updateHeaderUI();
+      const m = computeProgressMetrics();
+      const user = getActiveUser();
+      const targetGrade = appState.targetGrade || 7;
+
+      // 1. Personalised Welcome Card
+      const welcomeCard = document.getElementById('home-welcome-card');
+      if (user) {
+        welcomeCard.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-2xl text-white font-extrabold text-xl flex items-center justify-center shrink-0 shadow-xs"
+                   style="background-color: ${user.avatarColor || '#0047AB'}">
+                ${escapeHtml(user.username.charAt(0).toUpperCase())}
+              </div>
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h1 class="text-lg sm:text-xl font-extrabold text-[#042454]">Welcome back, ${escapeHtml(user.username)}</h1>
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]">
+                    Target: Grade ${user.targetGrade}
+                  </span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#475569] mt-0.5">
+                  Your revision progress is saved to your personal profile on this browser. Export a Save Code anytime to study on another device.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 shrink-0">
+              <button type="button" onclick="openAccountModal('portability')"
+                class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-[#EFF6FF] text-[#0047AB] border border-[#BFDBFE] hover:bg-[#DBEAFE] transition">
+                Export Save Code
+              </button>
+              <button type="button" onclick="openAccountModal('profiles')"
+                class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-white text-[#042454] border border-[#E2E8F0] hover:bg-slate-50 transition">
+                Switch Profile
+              </button>
+            </div>
+          </div>
+        `;
+      } else {
+        welcomeCard.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <h1 class="text-lg sm:text-xl font-extrabold text-[#042454]">Welcome to History Genie — AQA GCSE (8145)</h1>
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-[#475569] border border-[#E2E8F0]">
+                  Guest Mode
+                </span>
+              </div>
+              <p class="text-xs sm:text-sm text-[#475569]">
+                Master all 16 AQA topics, practise 52 auto-marked exam questions, and drill 116 active-recall flashcards. Create a free local profile to set a Target Grade and save separate progress.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 shrink-0">
+              <button type="button" onclick="openAccountModal('create')"
+                class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition shadow-2xs">
+                Create Free Profile / Sign In
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      // 2. Four Overview KPI Summary Cards
+      const topicsPct = Math.round((m.masteredTopics / TOPICS.length) * 100);
+      const examAttemptPct = Math.round((m.scoredQs / EXAM_QUESTIONS.length) * 100);
+      const fcPct = Math.round((m.knownCards / FLASHCARDS.length) * 100);
+      const gradeGap = targetGrade - m.workingGrade;
+      const gradeBadgeText = !m.hasAnyActivity
+        ? `Target: Grade ${targetGrade}`
+        : gradeGap <= 0
+          ? `★ On Target (Grade ${targetGrade})`
+          : `+${gradeGap} Grade${gradeGap === 1 ? '' : 's'} to Target G${targetGrade}`;
+
+      document.getElementById('home-kpi-grid').innerHTML = `
+        <!-- KPI 1: Topics Mastered -->
+        <div class="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-5 flex flex-col justify-between space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#475569]">Topics Mastered</span>
+            <span class="text-xs font-bold text-[#0047AB]">${topicsPct}%</span>
+          </div>
+          <div>
+            <div class="text-2xl font-extrabold text-[#042454]">${m.masteredTopics} <span class="text-sm font-semibold text-[#475569]">/ 16</span></div>
+            <div class="text-xs text-[#475569] mt-0.5">${m.inProgressTopics} currently in progress</div>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div class="h-full bg-[#0047AB] transition-all duration-300" style="width: ${topicsPct}%"></div>
+          </div>
+        </div>
+
+        <!-- KPI 2: Exam Practice -->
+        <div class="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-5 flex flex-col justify-between space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#475569]">Exam Practice</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-[#EFF6FF] text-[#0047AB]">Avg: ${m.scoredQs > 0 ? m.avgExamPct + '%' : '—'}</span>
+          </div>
+          <div>
+            <div class="text-2xl font-extrabold text-[#042454]">${m.scoredQs} <span class="text-sm font-semibold text-[#475569]">/ 52</span></div>
+            <div class="text-xs text-[#475569] mt-0.5">${m.scoredQs > 0 ? 'Auto-marked exam responses' : 'No questions attempted yet'}</div>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div class="h-full bg-[#042454] transition-all duration-300" style="width: ${examAttemptPct}%"></div>
+          </div>
+        </div>
+
+        <!-- KPI 3: Flashcards Known -->
+        <div class="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-5 flex flex-col justify-between space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#475569]">Flashcards Known</span>
+            <span class="text-xs font-bold text-emerald-700">${fcPct}%</span>
+          </div>
+          <div>
+            <div class="text-2xl font-extrabold text-[#042454]">${m.knownCards} <span class="text-sm font-semibold text-[#475569]">/ 116</span></div>
+            <div class="text-xs text-[#475569] mt-0.5">${116 - m.knownCards} cards left to master</div>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div class="h-full bg-emerald-600 transition-all duration-300" style="width: ${fcPct}%"></div>
+          </div>
+        </div>
+
+        <!-- KPI 4: Estimated Working Grade -->
+        <div class="bg-white border-2 border-[#F5B800] rounded-2xl p-4 sm:p-5 flex flex-col justify-between space-y-3 bg-gradient-to-br from-white to-[#FFFBEB]/60">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#92400E]">Working Grade</span>
+            <span class="text-[11px] font-bold text-[#042454]">8145 Scale</span>
+          </div>
+          <div>
+            <div class="text-2xl font-extrabold text-[#042454]">Grade ${m.workingGrade}</div>
+            <div class="text-xs font-semibold text-[#92400E] mt-0.5">${gradeBadgeText}</div>
+          </div>
+          <div class="flex items-center gap-1">
+            ${[4, 5, 6, 7, 8, 9].map(g => `
+              <span class="flex-1 h-2 rounded-full ${g <= m.workingGrade ? 'bg-[#F5B800]' : 'bg-slate-200'}"></span>
+            `).join('')}
+          </div>
+        </div>
+      `;
+
+      // 3. Unit-by-Unit Mastery Breakdown (All 4 Units)
+      document.getElementById('home-units-grid').innerHTML = UNITS.map(unit => {
+        const uTopics = TOPICS.filter(t => t.unit === unit.code);
+        const uMastered = uTopics.filter(t => appState.topicStatus[t.id] === 'mastered').length;
+        const uInProg = uTopics.filter(t => appState.topicStatus[t.id] === 'in_progress').length;
+        const uTopicBarPct = Math.round(((uMastered + uInProg * 0.4) / uTopics.length) * 100);
+
+        const uCards = FLASHCARDS.filter(c => c.unit === unit.code);
+        const uKnown = uCards.filter(c => !!appState.fcKnown[c.id]).length;
+
+        const uQs = EXAM_QUESTIONS.filter(q => q.unit === unit.code);
+        const uQsDone = uQs.filter(q => !!appState.examScores[q.id]).length;
+
+        return `
+          <div class="bg-white border border-[#E2E8F0] rounded-2xl p-5 space-y-4 hover:border-[#BFDBFE] transition">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex items-start gap-2.5">
+                <span class="w-3 h-3 rounded-full mt-1 shrink-0" style="background-color: ${unit.dotColor}"></span>
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-[#475569]">${unit.paper}</span>
+                  <h3 class="text-sm sm:text-base font-bold text-[#042454] leading-snug">${escapeHtml(unit.title)}</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#F8FAFC] border border-[#E2E8F0] text-[#042454] shrink-0">
+                ${uMastered}/4 Topics
+              </span>
+            </div>
+
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between text-xs text-[#475569]">
+                <span>Syllabus Progress (${uMastered} mastered, ${uInProg} in progress)</span>
+                <span class="font-bold text-[#042454]">${uTopicBarPct}%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="h-full transition-all duration-300" style="width: ${uTopicBarPct}%; background-color: ${unit.dotColor}"></div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100 text-xs text-[#475569]">
+              <div class="flex items-center gap-3">
+                <span><strong class="text-[#042454]">${uKnown}/${uCards.length}</strong> Flashcards</span>
+                <span>•</span>
+                <span><strong class="text-[#042454]">${uQsDone}/${uQs.length}</strong> Exam Qs</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <a href="#topics" class="px-2.5 py-1.5 rounded-lg font-semibold bg-[#F8FAFC] text-[#042454] border border-[#E2E8F0] hover:bg-[#EFF6FF] hover:text-[#0047AB] transition">
+                  Topics
+                </a>
+                <button type="button" onclick="homeOpenUnitExam('${unit.code}')"
+                  class="px-2.5 py-1.5 rounded-lg font-semibold bg-[#EFF6FF] text-[#0047AB] border border-[#BFDBFE] hover:bg-[#DBEAFE] transition">
+                  Practice Qs
+                </button>
+                <button type="button" onclick="homeOpenUnitFlashcards('${unit.code}')"
+                  class="px-2.5 py-1.5 rounded-lg font-semibold bg-[#F8FAFC] text-[#042454] border border-[#E2E8F0] hover:bg-[#EFF6FF] hover:text-[#0047AB] transition">
+                  Flashcards
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // 4. Recent Marked Attempts Table (Last 5 marked answers)
+      const recentContainer = document.getElementById('home-recent-attempts');
+      const attemptsList = Object.entries(appState.examScores)
+        .map(([qId, entry]) => {
+          const qObj = EXAM_QUESTIONS.find(q => q.id === qId);
+          return qObj ? { q: qObj, entry, ts: entry.timestamp || 0 } : null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.ts - a.ts)
+        .slice(0, 5);
+
+      if (attemptsList.length === 0) {
+        recentContainer.innerHTML = `
+          <div class="p-8 text-center space-y-2.5 my-auto">
+            <p class="text-sm font-semibold text-[#042454]">No marked exam answers yet</p>
+            <p class="text-xs text-[#475569] max-w-md mx-auto">Attempt any of the 52 auto-marked AQA 8145 questions to receive instant AO feedback, missed keyword prompts, and Grade 9 model answers.</p>
+            <div class="pt-1">
+              <a href="#exam-practice" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
+                Start First Exam Question →
+              </a>
+            </div>
+          </div>
+        `;
+      } else {
+        recentContainer.innerHTML = `
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs sm:text-sm">
+              <thead>
+                <tr class="bg-[#F8FAFC] text-[#475569] text-[11px] uppercase tracking-wider border-b border-[#E2E8F0]">
+                  <th class="py-2.5 px-4 font-semibold">Paper</th>
+                  <th class="py-2.5 px-4 font-semibold">Question Stem</th>
+                  <th class="py-2.5 px-4 font-semibold">Score</th>
+                  <th class="py-2.5 px-4 font-semibold text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                ${attemptsList.map(({ q, entry }) => {
+                  const unitObj = UNITS.find(u => u.code === q.unit);
+                  const isHigh = entry.score >= Math.ceil(entry.max * 0.75);
+                  return `
+                    <tr class="hover:bg-[#F8FAFC]">
+                      <td class="py-3 px-4 whitespace-nowrap">
+                        <span class="inline-flex items-center gap-1.5 font-bold text-xs text-[#042454]">
+                          <span class="w-2 h-2 rounded-full" style="background-color: ${unitObj.dotColor}"></span>
+                          ${q.unit}
+                        </span>
+                      </td>
+                      <td class="py-3 px-4 text-slate-700 max-w-xs truncate">${escapeHtml(q.prompt.split('\n')[0])}</td>
+                      <td class="py-3 px-4 whitespace-nowrap">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold ${
+                          isHigh
+                            ? 'bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]'
+                            : 'bg-[#EFF6FF] text-[#0047AB]'
+                        }">
+                          ${entry.score} / ${entry.max}
+                        </span>
+                      </td>
+                      <td class="py-3 px-4 text-right whitespace-nowrap">
+                        <button type="button" onclick="homeRetryExamQuestion('${q.id}')"
+                          class="text-xs font-bold text-[#0047AB] hover:underline">
+                          Retry →
+                        </button>
+                      </td>
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }
+    }
+
+    function homeOpenUnitExam(unitCode) {
+      examUnitFilter = unitCode;
+      examMarkFilter = 'ALL';
+      const firstQ = EXAM_QUESTIONS.find(q => q.unit === unitCode);
+      if (firstQ) selectedExamQId = firstQ.id;
+      navigateTo('exam-practice');
+    }
+
+    function homeOpenUnitFlashcards(unitCode) {
+      fcUnitFilter = unitCode;
+      fcSubtopicFilter = 'ALL';
+      fcStatusFilter = 'ALL';
+      fcIndex = 0;
+      fcFlipped = false;
+      populateFcSubtopicDropdown();
+      navigateTo('flashcards');
+    }
+
+    function homeJumpRandomExam() {
+      const randomQ = EXAM_QUESTIONS[Math.floor(Math.random() * EXAM_QUESTIONS.length)];
+      examUnitFilter = 'ALL';
+      examMarkFilter = 'ALL';
+      selectedExamQId = randomQ.id;
+      navigateTo('exam-practice');
+      showToast(`Loaded Question ${randomQ.id.toUpperCase()} (${randomQ.marks}${randomQ.spag ? '+4' : ''} marks)`);
+    }
+
+    function homeReviewUnlearnedFlashcards() {
+      fcUnitFilter = 'ALL';
+      fcSubtopicFilter = 'ALL';
+      fcStatusFilter = 'REVIEW';
+      fcMode = 'flip';
+      fcIndex = 0;
+      fcFlipped = false;
+      populateFcSubtopicDropdown();
+      navigateTo('flashcards');
+    }
+
+    function homeRetryExamQuestion(qId) {
+      const q = EXAM_QUESTIONS.find(item => item.id === qId);
+      if (!q) return;
+      examUnitFilter = 'ALL';
+      examMarkFilter = 'ALL';
+      selectedExamQId = q.id;
+      navigateTo('exam-practice');
+    }
+
+    /* ============================================================================
+       8. PAGE 2: TOPICS VIEW, 3-STATE MASTERY CYCLING & STUDY MODAL
        ============================================================================ */
     function renderTopicsView() {
-      updateMasteryHeader();
+      updateHeaderUI();
       const container = document.getElementById('topics-list-container');
       container.innerHTML = UNITS.map(unit => {
         const unitTopics = TOPICS.filter(t => t.unit === unit.code);
@@ -1972,6 +2561,7 @@
           const status = appState.topicStatus[topic.id] || 'not_started';
           const pillConfig = getStatusPillConfig(status);
           const qCount = EXAM_QUESTIONS.filter(q => q.subtopicId === topic.id).length;
+          const fcCount = FLASHCARDS.filter(c => c.subtopicId === topic.id).length;
 
           return `
             <div class="p-4 sm:px-5 flex flex-col md:flex-row md:items-center justify-between gap-3.5 hover:bg-[#F8FAFC] transition">
@@ -1979,10 +2569,10 @@
                 <span class="w-2.5 h-2.5 rounded-full mt-1.5 shrink-0" style="background-color: ${unit.dotColor}"></span>
                 <div class="min-w-0">
                   <div class="flex flex-wrap items-center gap-2">
-                    <h3 class="text-sm sm:text-[15px] font-bold text-[#00214E]">${escapeHtml(topic.title)}</h3>
-                    ${topic.id === '2b-4' ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide bg-[#FFFBEB] text-[#92400E] border border-[#FFC300]">2027 Specified Site</span>' : ''}
+                    <h3 class="text-sm sm:text-[15px] font-bold text-[#042454]">${escapeHtml(topic.title)}</h3>
+                    ${topic.id === '2b-4' ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]">2027 Specified Site</span>' : ''}
                   </div>
-                  <p class="text-xs sm:text-[13px] text-slate-600 mt-0.5 leading-relaxed">${escapeHtml(topic.focus)}</p>
+                  <p class="text-xs sm:text-[13px] text-[#475569] mt-0.5 leading-relaxed">${escapeHtml(topic.focus)}</p>
                 </div>
               </div>
 
@@ -1994,16 +2584,22 @@
                   ${pillConfig.label}
                 </button>
 
-                <!-- Study Button -->
+                <!-- Study Notes & Quiz Modal Button -->
                 <button type="button" onclick="openStudyModal('${topic.id}')"
-                  class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-[#004EB3] text-white hover:bg-[#003B8E] transition">
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-[#0047AB] text-white hover:bg-[#003580] transition">
                   Study
                 </button>
 
                 <!-- Practice Qs Jump Link -->
                 <button type="button" onclick="jumpToPracticeQuestions('${unit.code}', '${topic.id}')"
-                  class="px-3 py-1.5 rounded-lg text-xs font-semibold text-[#004EB3] bg-[#EFF6FF] hover:bg-[#DBEAFE] border border-[#BFDBFE] transition">
-                  Practice Qs (${qCount}) →
+                  class="px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0047AB] bg-[#EFF6FF] hover:bg-[#DBEAFE] border border-[#BFDBFE] transition">
+                  Practice Qs (${qCount})
+                </button>
+
+                <!-- Flashcards Sub-Topic Jump Link -->
+                <button type="button" onclick="jumpToSubtopicFlashcards('${unit.code}', '${topic.id}')"
+                  class="px-3 py-1.5 rounded-lg text-xs font-semibold text-[#042454] bg-white hover:bg-slate-100 border border-[#E2E8F0] transition">
+                  Flashcards (${fcCount})
                 </button>
               </div>
             </div>
@@ -2012,13 +2608,13 @@
 
         return `
           <div class="bg-white border border-[#E2E8F0] rounded-xl overflow-hidden">
-            <div class="px-4 sm:px-5 py-3.5 bg-[#F8FAFC] border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+            <div class="px-4 sm:px-5 py-3.5 bg-[#F8FAFC] border-b border-[#E2E8F0] flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-2.5">
                 <span class="w-3 h-3 rounded-full shrink-0" style="background-color: ${unit.dotColor}"></span>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-500">${unit.paper}</span>
-                <h2 class="text-sm sm:text-base font-bold text-[#00214E]">${escapeHtml(unit.title)}</h2>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#475569]">${unit.paper}</span>
+                <h2 class="text-sm sm:text-base font-bold text-[#042454]">${escapeHtml(unit.title)}</h2>
               </div>
-              <span class="text-xs font-semibold text-slate-600">${unitMastered} / 4 Mastered</span>
+              <span class="text-xs font-semibold text-[#475569]">${unitMastered} / 4 Mastered</span>
             </div>
             <div class="divide-y divide-slate-200">
               ${rowsHtml}
@@ -2032,18 +2628,18 @@
       if (status === 'mastered') {
         return {
           label: '★ Mastered',
-          classes: 'bg-[#FFFBEB] text-[#92400E] border-[#FFC300] hover:brightness-95'
+          classes: 'bg-[#FFFBEB] text-[#92400E] border-[#F5B800] hover:brightness-95'
         };
       }
       if (status === 'in_progress') {
         return {
           label: '● In Progress',
-          classes: 'bg-[#EFF6FF] text-[#004EB3] border-[#BFDBFE] hover:bg-[#DBEAFE]'
+          classes: 'bg-[#EFF6FF] text-[#0047AB] border-[#BFDBFE] hover:bg-[#DBEAFE]'
         };
       }
       return {
         label: '○ Not Started',
-        classes: 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200/70'
+        classes: 'bg-slate-100 text-[#475569] border-slate-200 hover:bg-slate-200/70'
       };
     }
 
@@ -2060,7 +2656,17 @@
       examMarkFilter = 'ALL';
       const firstMatch = EXAM_QUESTIONS.find(q => q.subtopicId === subtopicId) || EXAM_QUESTIONS.find(q => q.unit === unitCode);
       if (firstMatch) selectedExamQId = firstMatch.id;
-      switchTab('exam');
+      navigateTo('exam-practice');
+    }
+
+    function jumpToSubtopicFlashcards(unitCode, subtopicId) {
+      fcUnitFilter = unitCode;
+      fcSubtopicFilter = subtopicId;
+      fcStatusFilter = 'ALL';
+      fcIndex = 0;
+      fcFlipped = false;
+      populateFcSubtopicDropdown();
+      navigateTo('flashcards');
     }
 
     /* --- Topic Study Modal with 4-Question Quick Check --- */
@@ -2076,11 +2682,11 @@
       const body = document.getElementById('study-modal-body');
       body.innerHTML = `
         <div class="space-y-2.5">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-[#004EB3]">Core Revision Summary</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#0047AB]">Core Revision Summary</h4>
           <ul class="space-y-2">
             ${topic.notes.map(n => `
               <li class="flex items-start gap-2.5 bg-[#F8FAFC] p-3 rounded-lg border border-slate-200/80 leading-relaxed">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#004EB3] mt-2 shrink-0"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0047AB] mt-2 shrink-0"></span>
                 <span>${escapeHtml(n)}</span>
               </li>
             `).join('')}
@@ -2088,33 +2694,33 @@
         </div>
 
         <div class="space-y-2">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-[#00214E]">Essential Dates, People & Key Terms</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#042454]">Essential Dates, People & Key Terms</h4>
           <div class="flex flex-wrap gap-1.5">
             ${topic.keyTerms.map(term => `
-              <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#EFF6FF] text-[#00214E] border border-[#BFDBFE]">${escapeHtml(term)}</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#EFF6FF] text-[#042454] border border-[#BFDBFE]">${escapeHtml(term)}</span>
             `).join('')}
           </div>
         </div>
 
-        <div class="p-3.5 rounded-xl bg-[#FFFBEB] border border-[#FFC300]">
+        <div class="p-3.5 rounded-xl bg-[#FFFBEB] border border-[#F5B800]">
           <div class="text-xs font-bold uppercase tracking-wider text-[#92400E] mb-1">AQA 8145 Examiner Tip</div>
           <p class="text-xs sm:text-sm text-slate-800 leading-relaxed">${escapeHtml(topic.examinerTip)}</p>
         </div>
 
         <div class="space-y-3 pt-2 border-t border-slate-200">
           <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold uppercase tracking-wider text-[#00214E]">4-Question Topic Check</h4>
-            <span id="study-quiz-score" class="text-xs font-bold text-[#004EB3]"></span>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-[#042454]">4-Question Topic Check</h4>
+            <span id="study-quiz-score" class="text-xs font-bold text-[#0047AB]"></span>
           </div>
           <div id="study-quiz-container" class="space-y-3">
             ${topic.quiz.map((item, idx) => `
               <div class="p-3.5 rounded-xl border border-slate-200 bg-white space-y-2" data-sq-idx="${idx}">
-                <p class="text-xs sm:text-sm font-semibold text-[#00214E]">${idx + 1}. ${escapeHtml(item.q)}</p>
+                <p class="text-xs sm:text-sm font-semibold text-[#042454]">${idx + 1}. ${escapeHtml(item.q)}</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                   ${item.options.map((opt, oIdx) => `
                     <button type="button" onclick="answerStudyQuiz(${idx}, ${oIdx})"
                       id="sq-${idx}-opt-${oIdx}"
-                      class="text-left px-3 py-2 rounded-lg text-xs font-medium border border-slate-200 hover:border-[#004EB3] hover:bg-[#EFF6FF] transition">
+                      class="text-left px-3 py-2 rounded-lg text-xs font-medium border border-slate-200 hover:border-[#0047AB] hover:bg-[#EFF6FF] transition">
                       ${escapeHtml(opt)}
                     </button>
                   `).join('')}
@@ -2182,7 +2788,7 @@
     }
 
     /* ============================================================================
-       7. TAB 2: EXAM PRACTICE & STRICT TOPIC-AWARE AUTO-MARKER
+       9. PAGE 3: EXAM PRACTICE & STRICT TOPIC-AWARE AUTO-MARKER
        ============================================================================ */
     function setExamUnitFilter(unit) {
       examUnitFilter = unit;
@@ -2229,7 +2835,7 @@
       document.querySelectorAll('.exam-unit-pill').forEach(btn => {
         const active = btn.getAttribute('data-exam-unit') === examUnitFilter;
         btn.className = `exam-unit-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
-          active ? 'bg-[#004EB3] text-white' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#004EB3]'
+          active ? 'bg-[#0047AB] text-white' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#0047AB]'
         }`;
       });
 
@@ -2237,7 +2843,7 @@
       document.querySelectorAll('.exam-mark-pill').forEach(btn => {
         const active = btn.getAttribute('data-exam-mark') === examMarkFilter;
         btn.className = `exam-mark-pill px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
-          active ? 'bg-[#00214E] text-[#FFC300]' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#004EB3]'
+          active ? 'bg-[#042454] text-[#F5B800]' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#0047AB]'
         }`;
       });
 
@@ -2245,9 +2851,12 @@
       document.getElementById('exam-filtered-count').textContent = `Showing ${filtered.length} of 52 questions`;
 
       const listEl = document.getElementById('exam-question-list');
+      const dropdown = document.getElementById('exam-question-dropdown');
+
       if (filtered.length === 0) {
-        listEl.innerHTML = `<div class="p-4 text-xs text-slate-500 text-center">No questions match this filter combination.</div>`;
-        document.getElementById('exam-workspace').innerHTML = `<div class="p-6 text-center text-sm text-slate-500">Select another paper or mark filter above.</div>`;
+        listEl.innerHTML = `<div class="p-4 text-xs text-[#475569] text-center">No questions match this filter combination.</div>`;
+        if (dropdown) dropdown.innerHTML = `<option value="">No matching questions</option>`;
+        document.getElementById('exam-workspace').innerHTML = `<div class="p-6 text-center text-sm text-[#475569]">Select another paper or mark filter above.</div>`;
         return;
       }
 
@@ -2255,7 +2864,17 @@
         selectedExamQId = filtered[0].id;
       }
 
-      listEl.innerHTML = filtered.map((q, idx) => {
+      if (dropdown) {
+        dropdown.innerHTML = filtered.map((q, idx) => {
+          const totalMax = q.marks + (q.spag ? 4 : 0);
+          const shortPrompt = q.prompt.split('\n')[0];
+          return `<option value="${q.id}" ${q.id === selectedExamQId ? 'selected' : ''}>
+            ${idx + 1}. [${q.unit} • ${totalMax}m] ${escapeHtml(shortPrompt.slice(0, 95))}${shortPrompt.length > 95 ? '...' : ''}
+          </option>`;
+        }).join('');
+      }
+
+      listEl.innerHTML = filtered.map(q => {
         const isSelected = q.id === selectedExamQId;
         const unitObj = UNITS.find(u => u.code === q.unit);
         const saved = appState.examScores[q.id];
@@ -2265,21 +2884,21 @@
           <button type="button" onclick="selectExamQuestion('${q.id}')"
             class="w-full text-left p-2.5 rounded-lg border transition flex items-start justify-between gap-2 ${
               isSelected
-                ? 'bg-[#EFF6FF] border-[#004EB3] shadow-2xs'
+                ? 'bg-[#EFF6FF] border-[#0047AB] shadow-2xs'
                 : 'bg-white border-slate-200/80 hover:bg-slate-50'
             }">
             <div class="min-w-0">
               <div class="flex items-center gap-1.5">
                 <span class="w-2 h-2 rounded-full shrink-0" style="background-color: ${unitObj.dotColor}"></span>
-                <span class="text-[11px] font-bold text-[#00214E]">${q.unit}</span>
-                <span class="text-[11px] font-semibold text-slate-500">• ${q.marks}${q.spag ? '+4 SPaG' : 'm'}</span>
+                <span class="text-[11px] font-bold text-[#042454]">${q.unit}</span>
+                <span class="text-[11px] font-semibold text-[#475569]">• ${q.marks}${q.spag ? '+4 SPaG' : 'm'}</span>
               </div>
               <p class="text-xs font-medium text-slate-800 line-clamp-2 mt-1">${escapeHtml(q.prompt.split('\n')[0])}</p>
             </div>
             ${saved ? `
               <span class="shrink-0 px-2 py-0.5 rounded text-[10px] font-bold ${
                 saved.score >= Math.ceil(totalMax * 0.75)
-                  ? 'bg-[#FFFBEB] text-[#92400E] border border-[#FFC300]'
+                  ? 'bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]'
                   : 'bg-slate-100 text-slate-700'
               }">
                 ${saved.score}/${totalMax}
@@ -2299,52 +2918,53 @@
       const saved = appState.examScores[q.id];
       const totalMax = q.marks + (q.spag ? 4 : 0);
       const targetWords = q.marks === 4 ? '60–90 words' : q.marks === 8 ? '140–200 words' : q.marks === 12 ? '220–300 words' : '300–420 words';
+      const targetTime = q.marks === 4 ? '5 mins' : q.marks === 8 ? '10 mins' : q.marks === 12 ? '15 mins' : '20 mins';
 
       workspace.innerHTML = `
-        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#E2E8F0]">
           <div class="flex flex-wrap items-center gap-2">
             <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold border ${unitObj.badgeBg}">
               <span class="w-2 h-2 rounded-full" style="background-color: ${unitObj.dotColor}"></span>
               ${unitObj.paper}
             </span>
-            <span class="text-xs font-semibold text-slate-600">${escapeHtml(q.type)}</span>
+            <span class="text-xs font-semibold text-[#475569]">${escapeHtml(q.type)}</span>
           </div>
-          <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#00214E] text-[#FFC300]">
-            ${q.marks} Marks${q.spag ? ' + 4 SPaG' : ''}
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#042454] text-[#F5B800]">
+            ${q.marks} Marks${q.spag ? ' + 4 SPaG' : ''} • ${targetTime}
           </span>
         </div>
 
-        <div class="text-xs text-slate-500">
-          Topic: <span class="font-semibold text-[#004EB3]">${escapeHtml(subtopicObj.title)}</span> • Recommended length: <span class="font-medium text-slate-700">${targetWords}</span>
+        <div class="text-xs text-[#475569]">
+          Topic: <span class="font-semibold text-[#0047AB]">${escapeHtml(subtopicObj.title)}</span> • Recommended length: <span class="font-medium text-slate-700">${targetWords}</span>
         </div>
 
         ${q.sourceText ? `
-          <div class="p-3.5 rounded-xl bg-[#F8FAFC] border border-slate-200 space-y-2 text-xs sm:text-[13px] text-slate-700 leading-relaxed">
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2 text-xs sm:text-[13px] text-slate-700 leading-relaxed">
             ${q.sourceText.split('\n').map(line => `<p>${escapeHtml(line)}</p>`).join('')}
           </div>
         ` : ''}
 
         <div class="p-4 rounded-xl bg-[#EFF6FF]/60 border border-[#BFDBFE]">
-          <div class="text-sm sm:text-[15px] font-bold text-[#00214E] whitespace-pre-line leading-relaxed">${escapeHtml(q.prompt)}</div>
+          <div class="text-sm sm:text-[15px] font-bold text-[#042454] whitespace-pre-line leading-relaxed">${escapeHtml(q.prompt)}</div>
         </div>
 
         <div class="space-y-2">
           <div class="flex items-center justify-between">
-            <label for="exam-answer-box" class="text-xs font-bold uppercase tracking-wider text-slate-600">Your Exam Answer</label>
-            <span id="exam-word-counter" class="text-xs font-medium text-slate-500">0 words</span>
+            <label for="exam-answer-box" class="text-xs font-bold uppercase tracking-wider text-[#475569]">Your Exam Answer</label>
+            <span id="exam-word-counter" class="text-xs font-medium text-[#475569]">0 words</span>
           </div>
           <textarea id="exam-answer-box" rows="${q.marks >= 12 ? 9 : 6}"
             oninput="updateExamWordCount()"
             placeholder="Write your structured AQA response here using specific dates, names, historical evidence, and clear analysis..."
-            class="w-full rounded-xl border border-slate-300 p-3.5 text-sm text-slate-800 leading-relaxed focus:border-[#004EB3]">${saved ? escapeHtml(saved.answer) : ''}</textarea>
+            class="w-full rounded-xl border border-slate-300 p-3.5 text-sm text-[#0F172A] leading-relaxed focus:border-[#0047AB]">${saved ? escapeHtml(saved.answer) : ''}</textarea>
 
           <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
             <button type="button" onclick="gradeExamAnswer('${q.id}')"
-              class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#004EB3] text-white hover:bg-[#003B8E] transition shadow-2xs">
-              Mark Answer
+              class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition shadow-2xs">
+              Mark My Answer
             </button>
             <button type="button" onclick="clearExamDraft('${q.id}')"
-              class="px-3 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">
+              class="px-3 py-2 rounded-lg text-xs font-semibold text-[#475569] hover:text-[#0F172A] hover:bg-slate-100 transition">
               Clear Box
             </button>
           </div>
@@ -2356,15 +2976,15 @@
         </div>
 
         <!-- Collapsible Mark Scheme Checklist -->
-        <details class="border border-slate-200 rounded-xl overflow-hidden bg-white">
-          <summary class="px-4 py-3 text-xs sm:text-sm font-bold text-[#00214E] bg-[#F8FAFC] cursor-pointer hover:bg-slate-100 transition select-none">
+        <details class="border border-[#E2E8F0] rounded-xl overflow-hidden bg-white">
+          <summary class="px-4 py-3 text-xs sm:text-sm font-bold text-[#042454] bg-[#F8FAFC] cursor-pointer hover:bg-slate-100 transition select-none">
             Mark Scheme Checklist (${totalMax} Marks)
           </summary>
-          <div class="p-4 border-t border-slate-200 space-y-2 text-xs sm:text-sm text-slate-700">
+          <div class="p-4 border-t border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-slate-700">
             <ul class="space-y-1.5">
               ${q.checklist.map(item => `
                 <li class="flex items-start gap-2">
-                  <span class="text-[#004EB3] font-bold">✓</span>
+                  <span class="text-[#0047AB] font-bold">✓</span>
                   <span>${escapeHtml(item)}</span>
                 </li>
               `).join('')}
@@ -2373,11 +2993,11 @@
         </details>
 
         <!-- Collapsible Grade 9 Model Answer (Mortarboard Gold Header) -->
-        <details class="border border-[#FFC300] rounded-xl overflow-hidden bg-white">
+        <details class="border border-[#F5B800] rounded-xl overflow-hidden bg-white">
           <summary class="px-4 py-3 text-xs sm:text-sm font-bold text-[#92400E] bg-[#FFFBEB] cursor-pointer hover:brightness-97 transition select-none">
             ★ Grade 9 Model Answer Exemplar
           </summary>
-          <div class="p-4 border-t border-[#FFC300]/50 space-y-2.5 text-xs sm:text-sm text-slate-800 leading-relaxed whitespace-pre-line">
+          <div class="p-4 border-t border-[#F5B800]/50 space-y-2.5 text-xs sm:text-sm text-slate-800 leading-relaxed whitespace-pre-line">
             ${escapeHtml(q.modelAnswer)}
           </div>
         </details>
@@ -2394,7 +3014,7 @@
       counter.textContent = `${words} word${words === 1 ? '' : 's'}`;
     }
 
-    function clearExamDraft(qId) {
+    function clearExamDraft() {
       const box = document.getElementById('exam-answer-box');
       if (box) box.value = '';
       updateExamWordCount();
@@ -2420,6 +3040,7 @@
       // 1. Placeholder, test string, and gibberish detection
       const placeholderPatterns = [
         /\bthis (sentence |text |answer )?is (just )?a test\b/i,
+        /\bnothing to do with the exam\b/i,
         /\btesting( 1 2 3)?\b/i,
         /\blorem ipsum\b/i,
         /\bhello world\b/i,
@@ -2458,7 +3079,7 @@
           rejected: true,
           verdict: '0 Marks — Ungradable / Placeholder Text Detected',
           summary: hasPlaceholder
-            ? 'Your response contains placeholder or test text (such as "this sentence is a test") rather than historical analysis. Under AQA 8145 marking rules, non-historical test text receives 0 marks.'
+            ? 'Your response contains placeholder or test text rather than relevant historical analysis. Under AQA 8145 marking rules, non-historical test text receives 0 marks.'
             : wordCount < 8
               ? 'Your response is too brief to award credit (fewer than 8 words). Write full analytical sentences supported by specific historical evidence.'
               : 'Your response repeats the same words without genuine historical explanation and scores 0 marks.',
@@ -2467,7 +3088,7 @@
         };
       } else if (matchedPrimary.length === 0) {
         const offTopicNote = offTopicHits.length > 0
-          ? ` You mentioned terms from another historical topic (${offTopicHits.slice(0, 3).join(', ')}), which do not answer this question.`
+          ? ` You mentioned terms from another historical period (${offTopicHits.slice(0, 3).join(', ')}), which do not answer this question.`
           : '';
         result = {
           score: 0,
@@ -2476,12 +3097,11 @@
           spagScore: 0,
           rejected: true,
           verdict: '0 Marks — Off-Topic / No Relevant Historical Evidence',
-          summary: `Your answer does not include any specific historical facts, dates, people, or concepts relevant to this question.${offTopicNote} Review the missed key terms below and try again.`,
+          summary: `No relevant historical evidence for this question was detected.${offTopicNote} Review the high-value key terms below and try again.`,
           matchedTerms: [],
           missedTerms: q.primaryKeywords.slice(0, 6),
         };
       } else {
-        // Compute genuine AO-weighted score
         const minTargetWords = q.marks === 4 ? 45 : q.marks === 8 ? 115 : q.marks === 12 ? 185 : 250;
         const lengthRatio = Math.min(1, wordCount / minTargetWords);
 
@@ -2491,7 +3111,6 @@
         const targetConceptCount = q.marks === 4 ? 2 : q.marks === 8 ? 3 : q.marks === 12 ? 4 : 5;
         const analysisRatio = Math.min(1, matchedConcepts.length / targetConceptCount);
 
-        // Paragraph / judgement check for 8m, 12m, 16m
         const paragraphs = rawText.split(/\n+/).filter(p => p.trim().length > 20).length;
         const hasConclusion = /\b(overall|in conclusion|therefore|ultimately|on balance|most important|main reason|to conclude)\b/i.test(rawText);
         let structureBonus = 0;
@@ -2503,13 +3122,11 @@
         }
 
         let rawRatio = (evidenceRatio * 0.48) + (analysisRatio * 0.27) + (lengthRatio * 0.25) + structureBonus;
-        // Cap if only 1 keyword matched so thin answers cannot inflate marks
         if (matchedPrimary.length === 1) rawRatio = Math.min(rawRatio, 0.30);
         if (matchedPrimary.length === 2 && q.marks >= 12) rawRatio = Math.min(rawRatio, 0.45);
 
         const contentScore = Math.max(1, Math.min(q.marks, Math.round(rawRatio * q.marks)));
 
-        // SPaG scoring (+4 on 16-mark questions)
         let spagScore = 0;
         if (q.spag) {
           const sentences = rawText.split(/[.!?]+/).filter(s => s.trim().length > 3);
@@ -2538,7 +3155,7 @@
 
         const adviceParts = [];
         if (wordCount < minTargetWords) {
-          adviceParts.push(`Expand your explanation toward ~${minTargetWords} words (currently ${wordCount} words).`);
+          adviceParts.push(`EBI: Expand your explanation toward ~${minTargetWords} words (currently ${wordCount} words).`);
         }
         if (q.marks >= 12 && !hasConclusion) {
           adviceParts.push('Add a clear comparative conclusion ("Overall...", "On balance...") weighing the factors directly.');
@@ -2547,7 +3164,7 @@
           adviceParts.push(`Include additional specific evidence such as: ${missedPrimary.slice(0, 3).join(', ')}.`);
         }
         if (adviceParts.length === 0) {
-          adviceParts.push('Strong command of specific historical evidence, clear AO2/AO3 analytical links, and sustained judgement.');
+          adviceParts.push('WWW: Strong command of specific historical evidence, clear AO2/AO3 analytical links, and sustained judgement.');
         }
 
         result = {
@@ -2568,6 +3185,7 @@
         max: totalMax,
         answer: rawText,
         lastResult: result,
+        timestamp: Date.now(),
       };
       saveState();
       renderExamView();
@@ -2577,21 +3195,21 @@
       const borderClass = res.rejected
         ? 'border-rose-300 bg-rose-50/70'
         : res.score >= Math.ceil(res.max * 0.75)
-          ? 'border-[#FFC300] bg-[#FFFBEB]/70'
+          ? 'border-[#F5B800] bg-[#FFFBEB]/70'
           : 'border-[#BFDBFE] bg-[#EFF6FF]/60';
 
       const titleColor = res.rejected
         ? 'text-rose-800'
         : res.score >= Math.ceil(res.max * 0.75)
           ? 'text-[#92400E]'
-          : 'text-[#00214E]';
+          : 'text-[#042454]';
 
       return `
         <div class="p-4 rounded-xl border ${borderClass} space-y-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div class="text-sm font-bold ${titleColor}">${escapeHtml(res.verdict)}</div>
             ${q.spag && !res.rejected ? `
-              <span class="px-2.5 py-0.5 rounded-md text-xs font-semibold bg-white border border-slate-200 text-[#00214E]">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-semibold bg-white border border-slate-200 text-[#042454]">
                 Content: ${res.contentScore}/${q.marks} • SPaG: ${res.spagScore}/4
               </span>
             ` : ''}
@@ -2620,7 +3238,7 @@
     }
 
     /* ============================================================================
-       8. TAB 3: FLASHCARDS (116 CARDS — FLIP & QUICK QUIZ MODES)
+       10. PAGE 4: FLASHCARDS (116 CARDS — FLIP & QUICK QUIZ MODES)
        ============================================================================ */
     function setFcUnit(unit) {
       fcUnitFilter = unit;
@@ -2678,30 +3296,27 @@
     }
 
     function renderFlashcardsView() {
-      // Update unit pills
       document.querySelectorAll('.fc-unit-pill').forEach(btn => {
         const active = btn.getAttribute('data-fc-unit') === fcUnitFilter;
         btn.className = `fc-unit-pill px-2.5 py-1.5 rounded-lg text-xs font-semibold transition ${
-          active ? 'bg-[#004EB3] text-white' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#004EB3]'
+          active ? 'bg-[#0047AB] text-white' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#0047AB]'
         }`;
       });
 
-      // Update status pills
       document.querySelectorAll('.fc-status-pill').forEach(btn => {
         const active = btn.getAttribute('data-fc-status') === fcStatusFilter;
         btn.className = `fc-status-pill px-2.5 py-1.5 rounded-lg text-xs font-semibold transition ${
-          active ? 'bg-[#00214E] text-[#FFC300]' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#004EB3]'
+          active ? 'bg-[#042454] text-[#F5B800]' : 'bg-slate-100 text-slate-700 hover:bg-[#EFF6FF] hover:text-[#0047AB]'
         }`;
       });
 
-      // Update mode toggle buttons
       const flipBtn = document.getElementById('fc-mode-flip');
       const quizBtn = document.getElementById('fc-mode-quiz');
       flipBtn.className = `px-3 py-1.5 rounded-md text-xs font-semibold transition ${
-        fcMode === 'flip' ? 'bg-[#004EB3] text-white shadow-2xs' : 'text-slate-600 hover:text-[#00214E]'
+        fcMode === 'flip' ? 'bg-[#0047AB] text-white shadow-2xs' : 'text-slate-600 hover:text-[#042454]'
       }`;
       quizBtn.className = `px-3 py-1.5 rounded-md text-xs font-semibold transition ${
-        fcMode === 'quiz' ? 'bg-[#004EB3] text-white shadow-2xs' : 'text-slate-600 hover:text-[#00214E]'
+        fcMode === 'quiz' ? 'bg-[#0047AB] text-white shadow-2xs' : 'text-slate-600 hover:text-[#042454]'
       }`;
 
       const deck = getFilteredFlashcards();
@@ -2710,9 +3325,9 @@
       if (deck.length === 0) {
         workspace.innerHTML = `
           <div class="bg-white border border-[#E2E8F0] rounded-xl p-10 text-center space-y-3">
-            <p class="text-sm font-semibold text-[#00214E]">No flashcards match your current filter.</p>
-            <p class="text-xs text-slate-500">Try switching Status back to "All" or selecting another Unit.</p>
-            <button type="button" onclick="setFcStatus('ALL')" class="px-4 py-2 rounded-lg text-xs font-semibold bg-[#004EB3] text-white">Show All Cards</button>
+            <p class="text-sm font-semibold text-[#042454]">No flashcards match your current filter.</p>
+            <p class="text-xs text-[#475569]">Try switching Status back to "All" or selecting another Unit.</p>
+            <button type="button" onclick="setFcStatus('ALL')" class="px-4 py-2 rounded-lg text-xs font-semibold bg-[#0047AB] text-white">Show All Cards</button>
           </div>
         `;
         return;
@@ -2728,15 +3343,13 @@
       if (fcMode === 'flip') {
         workspace.innerHTML = `
           <div class="max-w-2xl mx-auto space-y-4">
-            <!-- Deck Counter & Status -->
-            <div class="flex items-center justify-between text-xs font-semibold text-slate-600 px-1">
+            <div class="flex items-center justify-between text-xs font-semibold text-[#475569] px-1">
               <span>Card ${fcIndex + 1} of ${deck.length}</span>
-              <span class="${isKnown ? 'text-[#92400E] bg-[#FFFBEB] border border-[#FFC300] px-2.5 py-0.5 rounded-full' : 'text-slate-500'}">
+              <span class="${isKnown ? 'text-[#92400E] bg-[#FFFBEB] border border-[#F5B800] px-2.5 py-0.5 rounded-full' : 'text-[#475569]'}">
                 ${isKnown ? '★ Known' : 'Needs Review'}
               </span>
             </div>
 
-            <!-- Interactive Flip Card -->
             <div class="fc-scene">
               <div id="active-fc-card" onclick="toggleFlashcardFlip()" class="fc-card ${fcFlipped ? 'is-flipped' : ''}">
                 <!-- FRONT -->
@@ -2750,18 +3363,18 @@
                   </div>
 
                   <div class="my-auto py-6 text-center">
-                    <h3 class="text-xl sm:text-2xl font-bold text-[#00214E] leading-snug">${escapeHtml(card.front)}</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#042454] leading-snug">${escapeHtml(card.front)}</h3>
                   </div>
 
-                  <div class="text-center text-xs font-medium text-[#004EB3]">
+                  <div class="text-center text-xs font-medium text-[#0047AB]">
                     Click card or press Spacebar to flip ↻
                   </div>
                 </div>
 
                 <!-- BACK -->
-                <div class="fc-face fc-back bg-[#00214E] text-white border-2 border-[#004EB3] rounded-2xl p-6 sm:p-8 shadow-sm">
+                <div class="fc-face fc-back bg-[#042454] text-white border-2 border-[#0047AB] rounded-2xl p-6 sm:p-8 shadow-sm">
                   <div class="flex items-center justify-between gap-2">
-                    <span class="text-xs font-bold text-[#FFC300]">${escapeHtml(card.front)}</span>
+                    <span class="text-xs font-bold text-[#F5B800]">${escapeHtml(card.front)}</span>
                     <span class="text-[11px] font-semibold uppercase tracking-wider text-blue-200">AQA Exam Knowledge</span>
                   </div>
 
@@ -2769,14 +3382,13 @@
                     <p class="text-sm sm:text-base text-slate-100 leading-relaxed">${escapeHtml(card.back)}</p>
                   </div>
 
-                  <div class="text-center text-xs font-medium text-[#FFC300]">
+                  <div class="text-center text-xs font-medium text-[#F5B800]">
                     Click card or press Spacebar to flip back ↺
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Navigation & Known / Review Controls -->
             <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
               <div class="flex items-center gap-2">
                 <button type="button" onclick="prevFlashcard()"
@@ -2796,22 +3408,21 @@
                       ? 'bg-slate-200 text-slate-900 border-slate-400'
                       : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-100'
                   }">
-                  Needs Review
+                  Still Learning
                 </button>
                 <button type="button" onclick="setCardKnownStatus('${card.id}', true)"
                   class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${
                     isKnown
-                      ? 'bg-[#FFC300] text-[#00214E]'
-                      : 'bg-[#004EB3] text-white hover:bg-[#003B8E]'
+                      ? 'bg-[#F5B800] text-[#042454]'
+                      : 'bg-[#0047AB] text-white hover:bg-[#003580]'
                   }">
-                  ★ Mark Known
+                  ★ Got It
                 </button>
               </div>
             </div>
           </div>
         `;
       } else {
-        // QUICK QUIZ MODE
         const options = buildQuizOptionsForCard(card);
         workspace.innerHTML = `
           <div class="max-w-2xl mx-auto bg-white border border-[#E2E8F0] rounded-2xl p-6 space-y-5">
@@ -2820,19 +3431,19 @@
                 ${unitObj.paper} • ${escapeHtml(subtopicObj.title)}
               </span>
               <div class="flex items-center gap-3 text-xs font-bold">
-                <span class="text-slate-500">Card ${fcIndex + 1}/${deck.length}</span>
-                <span class="px-2.5 py-1 rounded-full bg-[#FFFBEB] text-[#92400E] border border-[#FFC300]">Streak: ${quizStreak}</span>
+                <span class="text-[#475569]">Card ${fcIndex + 1}/${deck.length}</span>
+                <span class="px-2.5 py-1 rounded-full bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]">Streak: ${quizStreak}</span>
               </div>
             </div>
 
             <div>
-              <div class="text-[11px] font-bold uppercase tracking-wider text-[#004EB3] mb-1">Identify the accurate AQA summary for:</div>
-              <h3 class="text-lg sm:text-xl font-bold text-[#00214E]">${escapeHtml(card.front)}</h3>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-[#0047AB] mb-1">Identify the accurate AQA summary for:</div>
+              <h3 class="text-lg sm:text-xl font-bold text-[#042454]">${escapeHtml(card.front)}</h3>
             </div>
 
             <div class="space-y-2.5">
               ${options.map((opt, idx) => {
-                let btnStyle = 'bg-white border-slate-200 text-slate-800 hover:border-[#004EB3] hover:bg-[#EFF6FF]/60';
+                let btnStyle = 'bg-white border-slate-200 text-slate-800 hover:border-[#0047AB] hover:bg-[#EFF6FF]/60';
                 if (quizAnswered) {
                   if (opt.isCorrect) {
                     btnStyle = 'bg-emerald-50 border-emerald-500 text-emerald-950 font-semibold';
@@ -2845,7 +3456,7 @@
                 return `
                   <button type="button" ${quizAnswered ? 'disabled' : ''} onclick="submitQuickQuizChoice(${idx}, ${opt.isCorrect}, '${card.id}')"
                     class="w-full text-left p-3.5 rounded-xl border-2 text-xs sm:text-sm leading-relaxed transition ${btnStyle}">
-                    <span class="font-bold mr-2 text-[#004EB3]">${String.fromCharCode(65 + idx)}.</span>
+                    <span class="font-bold mr-2 text-[#0047AB]">${String.fromCharCode(65 + idx)}.</span>
                     ${escapeHtml(opt.text)}
                   </button>
                 `;
@@ -2853,11 +3464,11 @@
             </div>
 
             <div class="flex items-center justify-between pt-2 border-t border-slate-100">
-              <span class="text-xs font-medium text-slate-500">
+              <span class="text-xs font-medium text-[#475569]">
                 ${quizAnswered ? 'Correct answers automatically mark the card as Known.' : 'Select the best matching historical explanation above.'}
               </span>
               <button type="button" onclick="nextFlashcard()"
-                class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#004EB3] text-white hover:bg-[#003B8E] transition">
+                class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
                 Next Question →
               </button>
             </div>
@@ -2867,7 +3478,6 @@
     }
 
     function buildQuizOptionsForCard(card) {
-      // Deterministic distractor selection from same unit so options stay stable during render
       const sameUnitOthers = FLASHCARDS.filter(c => c.unit === card.unit && c.id !== card.id);
       const seed = parseInt(card.id.replace(/\D/g, ''), 10) || 1;
       const d1 = sameUnitOthers[(seed * 3) % sameUnitOthers.length];
@@ -2881,10 +3491,8 @@
         { text: d3.back, isCorrect: false },
       ];
 
-      // Deterministic shuffle based on seed
       const pos = seed % 4;
-      const rotated = raw.slice(pos).concat(raw.slice(0, pos));
-      return rotated;
+      return raw.slice(pos).concat(raw.slice(0, pos));
     }
 
     function submitQuickQuizChoice(idx, isCorrect, cardId) {
@@ -2937,9 +3545,8 @@
       nextFlashcard();
     }
 
-    // Keyboard shortcuts for Flashcards (Space to flip, Left/Right arrows to navigate)
     document.addEventListener('keydown', (e) => {
-      if (activeTab !== 'flashcards' || fcMode !== 'flip') return;
+      if (activePage !== 'flashcards' || fcMode !== 'flip') return;
       const tag = document.activeElement ? document.activeElement.tagName : '';
       if (tag === 'TEXTAREA' || tag === 'INPUT' || tag === 'SELECT') return;
 
@@ -2956,51 +3563,449 @@
     });
 
     /* ============================================================================
-       9. BACKUP / RESTORE JSON MODAL (NO BROWSER ALERT/CONFIRM DIALOGS)
+       11. STUDENT ACCOUNTS, SIGN IN, CREATE ACCOUNT & CROSS-DEVICE PORTABILITY MODAL
        ============================================================================ */
-    function openBackupModal() {
+    function openAccountModal(tab = 'profiles') {
       resetConfirmArmed = false;
-      const resetBtn = document.getElementById('reset-progress-btn');
-      if (resetBtn) resetBtn.textContent = 'Reset All Progress';
-
-      const area = document.getElementById('backup-json-area');
-      area.value = JSON.stringify(appState, null, 2);
-      document.getElementById('backup-modal').classList.remove('hidden');
+      selectedLoginUserId = null;
+      document.getElementById('account-modal').classList.remove('hidden');
+      switchAccountTab(tab);
     }
 
-    function closeBackupModal() {
-      document.getElementById('backup-modal').classList.add('hidden');
+    function closeAccountModal() {
+      document.getElementById('account-modal').classList.add('hidden');
     }
 
-    function copyBackupJson() {
-      const area = document.getElementById('backup-json-area');
+    function switchAccountTab(tab) {
+      activeAccountTab = tab;
+      ['profiles', 'create', 'portability'].forEach(t => {
+        const btn = document.getElementById(`acct-tab-${t}`);
+        if (!btn) return;
+        if (t === tab) {
+          btn.className = 'px-3.5 py-2 text-xs font-bold rounded-t-lg border-b-2 border-[#0047AB] text-[#0047AB] bg-white transition';
+        } else {
+          btn.className = 'px-3.5 py-2 text-xs font-bold rounded-t-lg border-b-2 border-transparent text-[#475569] hover:text-[#042454] transition';
+        }
+      });
+      renderAccountModalBody();
+    }
+
+    function renderAccountModalBody() {
+      const body = document.getElementById('account-modal-body');
+      const activeUser = getActiveUser();
+      const savedUsers = Object.values(usersDb.users);
+
+      if (activeAccountTab === 'profiles') {
+        body.innerHTML = `
+          <div class="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-full font-bold text-xs flex items-center justify-center shrink-0"
+                    style="background-color: ${activeUser ? activeUser.avatarColor : '#E2E8F0'}; color: ${activeUser ? '#FFFFFF' : '#042454'}">
+                ${activeUser ? escapeHtml(activeUser.username.charAt(0).toUpperCase()) : 'G'}
+              </span>
+              <div>
+                <div class="text-xs font-bold text-[#042454]">
+                  ${activeUser ? `Signed in as ${escapeHtml(activeUser.username)}` : 'Currently browsing as Guest'}
+                </div>
+                <div class="text-[11px] text-[#475569]">
+                  ${activeUser ? `Target: Grade ${activeUser.targetGrade} • Progress isolated to this account` : 'Guest progress is saved locally in this browser'}
+                </div>
+              </div>
+            </div>
+            ${activeUser ? `
+              <button type="button" onclick="switchToGuest()"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-[#E2E8F0] text-[#475569] hover:text-[#042454] hover:bg-slate-100 transition">
+                Sign Out (Guest)
+              </button>
+            ` : ''}
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#042454]">Saved Student Profiles (${savedUsers.length})</h4>
+              <button type="button" onclick="switchAccountTab('create')" class="text-xs font-bold text-[#0047AB] hover:underline">+ New Profile</button>
+            </div>
+
+            ${savedUsers.length === 0 ? `
+              <div class="p-5 rounded-xl border border-dashed border-slate-300 text-center space-y-2">
+                <p class="text-xs text-[#475569]">No saved accounts on this browser yet.</p>
+                <button type="button" onclick="switchAccountTab('create')"
+                  class="px-4 py-2 rounded-lg text-xs font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
+                  Create Your First Student Profile
+                </button>
+              </div>
+            ` : `
+              <div class="space-y-2">
+                ${savedUsers.map(u => {
+                  const isCurrent = activeUser && activeUser.id === u.id;
+                  const isSelectedForPin = selectedLoginUserId === u.id;
+                  const uMastered = TOPICS.filter(t => (u.data.topicStatus || {})[t.id] === 'mastered').length;
+                  return `
+                    <div class="rounded-xl border ${isCurrent ? 'border-[#0047AB] bg-[#EFF6FF]/40' : 'border-[#E2E8F0] bg-white'} p-3 space-y-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0"
+                                style="background-color: ${u.avatarColor || '#0047AB'}">
+                            ${escapeHtml(u.username.charAt(0).toUpperCase())}
+                          </span>
+                          <div>
+                            <div class="text-xs sm:text-sm font-bold text-[#042454]">${escapeHtml(u.username)}</div>
+                            <div class="text-[11px] text-[#475569]">Target: Grade ${u.targetGrade} • ${uMastered}/16 Topics Mastered</div>
+                          </div>
+                        </div>
+
+                        ${isCurrent ? `
+                          <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#FFFBEB] text-[#92400E] border border-[#F5B800]">Active</span>
+                        ` : `
+                          <button type="button" onclick="promptProfilePin('${u.id}')"
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
+                            Sign In
+                          </button>
+                        `}
+                      </div>
+
+                      ${isSelectedForPin ? `
+                        <form onsubmit="submitProfileSignIn(event, '${u.id}')" class="pt-2 border-t border-slate-200 flex flex-wrap items-center gap-2">
+                          <input type="password" id="login-pin-input" placeholder="Enter PIN / password" required
+                            class="flex-1 min-w-[140px] rounded-lg border border-slate-300 px-3 py-1.5 text-xs text-[#0F172A]" />
+                          <button type="submit" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-[#042454] text-[#F5B800] hover:opacity-95">
+                            Unlock Profile
+                          </button>
+                        </form>
+                        <div id="login-pin-error" class="hidden text-xs font-semibold text-rose-700"></div>
+                      ` : ''}
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            `}
+          </div>
+        `;
+      } else if (activeAccountTab === 'create') {
+        const guestMetrics = (() => {
+          const g = loadGuestState();
+          return Object.keys(g.topicStatus).length + Object.keys(g.fcKnown).length + Object.keys(g.examScores).length;
+        })();
+
+        body.innerHTML = `
+          <form onsubmit="handleCreateAccount(event)" class="space-y-4">
+            <div>
+              <label for="new-acct-username" class="block text-xs font-bold text-[#042454] mb-1">Student Username (3–20 characters)</label>
+              <input type="text" id="new-acct-username" minlength="3" maxlength="20" required placeholder="e.g. Ellie_History"
+                class="w-full rounded-xl border border-slate-300 px-3.5 py-2 text-sm text-[#0F172A]" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="new-acct-grade" class="block text-xs font-bold text-[#042454] mb-1">Target GCSE Grade</label>
+                <select id="new-acct-grade" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-[#0F172A] bg-white">
+                  <option value="5">Grade 5</option>
+                  <option value="6">Grade 6</option>
+                  <option value="7" selected>Grade 7</option>
+                  <option value="8">Grade 8</option>
+                  <option value="9">Grade 9</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="new-acct-pin" class="block text-xs font-bold text-[#042454] mb-1">4-Digit PIN or Password</label>
+                <input type="password" id="new-acct-pin" minlength="4" maxlength="32" required placeholder="Min 4 characters"
+                  class="w-full rounded-xl border border-slate-300 px-3.5 py-2 text-sm text-[#0F172A]" />
+              </div>
+            </div>
+
+            <div>
+              <span class="block text-xs font-bold text-[#042454] mb-1.5">Avatar Colour</span>
+              <div class="flex items-center gap-2">
+                ${AVATAR_COLORS.map(c => `
+                  <button type="button" onclick="selectNewAvatarColor('${c.hex}')" aria-label="${c.name}"
+                    class="w-8 h-8 rounded-full border-2 transition ${newAvatarColor === c.hex ? 'border-[#F5B800] scale-110 ring-2 ring-[#042454]/20' : 'border-white'}"
+                    style="background-color: ${c.hex}"></button>
+                `).join('')}
+              </div>
+            </div>
+
+            <label class="flex items-start gap-2.5 p-3 rounded-xl bg-[#EFF6FF]/60 border border-[#BFDBFE] cursor-pointer">
+              <input type="checkbox" id="copy-guest-checkbox" ${guestMetrics > 0 ? 'checked' : ''} class="mt-0.5 rounded text-[#0047AB]" />
+              <span class="text-xs text-slate-700 leading-relaxed">
+                <strong>Copy my current Guest progress into this new account</strong>
+                ${guestMetrics > 0 ? '(Recommended — transfers your existing Guest topics, flashcards, and exam scores)' : '(Currently empty)'}
+              </span>
+            </label>
+
+            <div id="create-acct-error" class="hidden p-2.5 rounded-lg bg-rose-50 border border-rose-200 text-xs font-semibold text-rose-700"></div>
+
+            <button type="submit"
+              class="w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
+              Create Account & Sign In
+            </button>
+          </form>
+        `;
+      } else {
+        // Portability & Backup Tab (Account Save Code + .json file download/upload + safe reset)
+        const saveCode = generateAccountSaveCode();
+        body.innerHTML = `
+          <div class="space-y-4">
+            <div class="p-3.5 rounded-xl bg-[#FFFBEB] border border-[#F5B800]/70 text-xs text-slate-800 leading-relaxed">
+              <strong class="text-[#92400E]">Cross-Device Portability:</strong> Copy your single-string <strong>Account Save Code</strong> or download a <code>.json</code> backup file to transfer your profile, PIN, and revision progress between school computers and home devices.
+            </div>
+
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <label for="acct-save-code-box" class="text-xs font-bold text-[#042454]">1. Account Save Code (Copy / Paste)</label>
+                <button type="button" onclick="copyAccountSaveCode()" class="text-xs font-bold text-[#0047AB] hover:underline">Copy Code</button>
+              </div>
+              <textarea id="acct-save-code-box" rows="3" class="w-full rounded-xl border border-slate-300 p-2.5 font-mono text-[11px] text-slate-800 bg-[#F8FAFC]">${escapeHtml(saveCode)}</textarea>
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" onclick="copyAccountSaveCode()"
+                  class="px-3.5 py-2 rounded-lg text-xs font-bold bg-[#0047AB] text-white hover:bg-[#003580] transition">
+                  Copy Save Code
+                </button>
+                <button type="button" onclick="importFromSaveCodeBox()"
+                  class="px-3.5 py-2 rounded-lg text-xs font-bold bg-[#042454] text-[#F5B800] hover:opacity-95 transition">
+                  Restore from Code
+                </button>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-[#E2E8F0] space-y-2">
+              <div class="text-xs font-bold text-[#042454]">2. Download or Upload .JSON Backup File</div>
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" onclick="downloadJsonBackupFile()"
+                  class="px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-[#E2E8F0] text-[#042454] hover:bg-[#EFF6FF] hover:border-[#BFDBFE] transition">
+                  Download .JSON File
+                </button>
+                <label class="px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-[#E2E8F0] text-[#042454] hover:bg-[#EFF6FF] hover:border-[#BFDBFE] transition cursor-pointer">
+                  Upload .JSON File
+                  <input type="file" accept=".json,application/json" onchange="handleJsonFileUpload(event)" class="hidden" />
+                </label>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-[#E2E8F0] flex items-center justify-between gap-2">
+              <span class="text-xs text-[#475569]">Clear progress for active profile only:</span>
+              <button type="button" id="reset-progress-btn" onclick="handleResetProgressClick()"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 transition">
+                Reset Profile Progress
+              </button>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function selectNewAvatarColor(hex) {
+      newAvatarColor = hex;
+      renderAccountModalBody();
+    }
+
+    async function handleCreateAccount(e) {
+      e.preventDefault();
+      const username = document.getElementById('new-acct-username').value.trim();
+      const targetGrade = parseInt(document.getElementById('new-acct-grade').value, 10) || 7;
+      const pin = document.getElementById('new-acct-pin').value.trim();
+      const copyGuest = document.getElementById('copy-guest-checkbox').checked;
+      const errBox = document.getElementById('create-acct-error');
+
+      if (username.length < 3 || username.length > 20) {
+        errBox.textContent = 'Username must be between 3 and 20 characters.';
+        errBox.classList.remove('hidden');
+        return;
+      }
+      if (pin.length < 4) {
+        errBox.textContent = 'Please choose a PIN or password of at least 4 characters.';
+        errBox.classList.remove('hidden');
+        return;
+      }
+
+      const duplicate = Object.values(usersDb.users).some(u => u.username.toLowerCase() === username.toLowerCase());
+      if (duplicate) {
+        errBox.textContent = 'That username already exists on this browser. Pick a different name or sign in.';
+        errBox.classList.remove('hidden');
+        return;
+      }
+
+      const pinHash = await hashPin(pin);
+      const userId = 'u_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+      const guestSeed = copyGuest ? loadGuestState() : JSON.parse(JSON.stringify(DEFAULT_PROGRESS));
+
+      usersDb.users[userId] = {
+        id: userId,
+        username,
+        avatarColor: newAvatarColor,
+        targetGrade,
+        pinHash,
+        createdAt: new Date().toISOString(),
+        data: {
+          topicStatus: guestSeed.topicStatus || {},
+          fcKnown: guestSeed.fcKnown || {},
+          examScores: guestSeed.examScores || {},
+        }
+      };
+      usersDb.activeUserId = userId;
+      saveUsersDb();
+
+      appState = loadActiveProfileState();
+      updateHeaderUI();
+      applyRoute(activePage);
+      closeAccountModal();
+      showToast(`Signed in as ${username} (Target: Grade ${targetGrade})`);
+    }
+
+    function promptProfilePin(userId) {
+      selectedLoginUserId = userId;
+      renderAccountModalBody();
+      setTimeout(() => {
+        const inp = document.getElementById('login-pin-input');
+        if (inp) inp.focus();
+      }, 30);
+    }
+
+    async function submitProfileSignIn(e, userId) {
+      e.preventDefault();
+      const user = usersDb.users[userId];
+      const inp = document.getElementById('login-pin-input');
+      const errEl = document.getElementById('login-pin-error');
+      if (!user || !inp) return;
+
+      const valid = await verifyPin(inp.value, user.pinHash);
+      if (!valid) {
+        errEl.textContent = 'Incorrect PIN or password. Please try again.';
+        errEl.classList.remove('hidden');
+        return;
+      }
+
+      usersDb.activeUserId = userId;
+      saveUsersDb();
+      appState = loadActiveProfileState();
+      updateHeaderUI();
+      applyRoute(activePage);
+      closeAccountModal();
+      showToast(`Welcome back, ${user.username}!`);
+    }
+
+    function switchToGuest() {
+      usersDb.activeUserId = 'guest';
+      saveUsersDb();
+      appState = loadActiveProfileState();
+      updateHeaderUI();
+      applyRoute(activePage);
+      closeAccountModal();
+      showToast('Switched to Guest profile.');
+    }
+
+    /* Cross-Device Save Code & JSON Export/Import */
+    function generateAccountSaveCode() {
+      const user = getActiveUser();
+      const payload = user
+        ? { version: 1, type: 'user', profile: user }
+        : { version: 1, type: 'guest', data: appState };
+      const jsonStr = JSON.stringify(payload);
+      const b64 = btoa(unescape(encodeURIComponent(jsonStr)));
+      return 'HG1:' + b64;
+    }
+
+    function copyAccountSaveCode() {
+      const area = document.getElementById('acct-save-code-box');
+      if (!area) return;
       area.select();
       area.setSelectionRange(0, 99999);
       try {
         document.execCommand('copy');
-        showToast('Backup JSON copied to clipboard!');
+        showToast('Account Save Code copied to clipboard!');
       } catch (err) {
-        showToast('Select and copy the JSON text manually.');
+        showToast('Select and copy the Save Code text manually.');
       }
     }
 
-    function restoreBackupJson() {
-      const area = document.getElementById('backup-json-area');
-      try {
-        const parsed = JSON.parse(area.value);
-        if (!parsed || typeof parsed !== 'object') throw new Error('Invalid');
+    function applyImportedPayload(payload) {
+      if (!payload || typeof payload !== 'object') throw new Error('Invalid');
+
+      if (payload.type === 'user' && payload.profile && payload.profile.username) {
+        const prof = payload.profile;
+        const id = prof.id || ('u_' + Date.now().toString(36));
+        usersDb.users[id] = {
+          id,
+          username: String(prof.username).slice(0, 20),
+          avatarColor: prof.avatarColor || '#0047AB',
+          targetGrade: prof.targetGrade || 7,
+          pinHash: prof.pinHash || '',
+          createdAt: prof.createdAt || new Date().toISOString(),
+          data: {
+            topicStatus: (prof.data && prof.data.topicStatus) || {},
+            fcKnown: (prof.data && prof.data.fcKnown) || {},
+            examScores: (prof.data && prof.data.examScores) || {},
+          }
+        };
+        usersDb.activeUserId = id;
+        saveUsersDb();
+        appState = loadActiveProfileState();
+        updateHeaderUI();
+        applyRoute(activePage);
+        closeAccountModal();
+        showToast(`Imported & signed in as ${usersDb.users[id].username}!`);
+      } else {
+        const src = payload.data || payload;
         appState = {
-          topicStatus: parsed.topicStatus && typeof parsed.topicStatus === 'object' ? parsed.topicStatus : {},
-          fcKnown: parsed.fcKnown && typeof parsed.fcKnown === 'object' ? parsed.fcKnown : {},
-          examScores: parsed.examScores && typeof parsed.examScores === 'object' ? parsed.examScores : {},
+          topicStatus: src.topicStatus && typeof src.topicStatus === 'object' ? src.topicStatus : {},
+          fcKnown: src.fcKnown && typeof src.fcKnown === 'object' ? src.fcKnown : {},
+          examScores: src.examScores && typeof src.examScores === 'object' ? src.examScores : {},
+          targetGrade: src.targetGrade || appState.targetGrade || 7,
         };
         saveState();
-        switchTab(activeTab);
-        closeBackupModal();
+        applyRoute(activePage);
+        closeAccountModal();
         showToast('Revision progress restored successfully!');
-      } catch (err) {
-        showToast('Invalid JSON format — please check your backup text.');
       }
+    }
+
+    function importFromSaveCodeBox() {
+      const area = document.getElementById('acct-save-code-box');
+      if (!area) return;
+      const raw = area.value.trim();
+      try {
+        let jsonStr = raw;
+        if (raw.startsWith('HG1:')) {
+          jsonStr = decodeURIComponent(escape(atob(raw.slice(4).trim())));
+        }
+        const parsed = JSON.parse(jsonStr);
+        applyImportedPayload(parsed);
+      } catch (err) {
+        showToast('Invalid Save Code — check that you copied the entire HG1:... string.');
+      }
+    }
+
+    function downloadJsonBackupFile() {
+      const user = getActiveUser();
+      const payload = user
+        ? { version: 1, type: 'user', profile: user }
+        : { version: 1, type: 'guest', data: appState };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const safeName = user ? user.username.toLowerCase().replace(/[^a-z0-9_-]/g, '_') : 'guest';
+      a.href = url;
+      a.download = `history-genie-${safeName}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Downloaded .JSON backup file!');
+    }
+
+    function handleJsonFileUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          applyImportedPayload(parsed);
+        } catch (err) {
+          showToast('Could not read .JSON file — invalid format.');
+        }
+      };
+      reader.readAsText(file);
     }
 
     function handleResetProgressClick() {
@@ -3010,17 +4015,18 @@
         btn.textContent = 'Click Again to Confirm Reset';
         return;
       }
-      appState = JSON.parse(JSON.stringify(DEFAULT_STATE));
+      const keepGrade = appState.targetGrade || 7;
+      appState = JSON.parse(JSON.stringify(DEFAULT_PROGRESS));
+      appState.targetGrade = keepGrade;
       saveState();
-      document.getElementById('backup-json-area').value = JSON.stringify(appState, null, 2);
       resetConfirmArmed = false;
-      btn.textContent = 'Reset All Progress';
-      switchTab(activeTab);
-      showToast('All revision progress has been reset.');
+      renderAccountModalBody();
+      applyRoute(activePage);
+      showToast('Progress cleared for current profile.');
     }
 
     /* ============================================================================
-       10. UTILITIES & INITIALISATION
+       12. UTILITIES & INITIALISATION
        ============================================================================ */
     function escapeHtml(str) {
       if (str === null || str === undefined) return '';
@@ -3034,8 +4040,11 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       populateFcSubtopicDropdown();
-      updateMasteryHeader();
-      switchTab('topics');
+      updateHeaderUI();
+      if (!window.location.hash) {
+        window.location.hash = '#home';
+      }
+      applyRoute(getRouteFromHash());
     });
   </script>
 </body>
